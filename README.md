@@ -20,16 +20,16 @@ Mac'in güç akışını, pil sağlığını ve uygulama etkinliğini tek bakı�
 
 ## ⬇️ Mac için indir
 
-> **Yeni marka: Wattelier.** Geçiş döneminde uygulamanın adı ve DMG dosyaları **MacBattery** olarak kalır. Mevcut kullanıcıların güncelleme akışı korunur.
+> **Yeni marka: Wattelier.** Yeni beta sürümü **Wattelier** adıyla yayımlanır. Eski kurulumların güncelleme uyumluluğu için iç paket adı **MacBattery.app** olarak korunur; kararlı 1.4.1 sürümü de eski paket adını kullanır.
 
 <!-- DOWNLOADS:START -->
 <div align="center">
 
-| **✦ Kararlı sürüm · 1.4.1** | **◇ Beta sürümü · 1.4.1-beta.2** |
+| **✦ Kararlı sürüm · 1.4.1** | **◇ Beta sürümü · 1.5.0-beta.2** |
 | :---: | :---: |
 | Günlük kullanım için önerilen sürüm | Yeni özellikler ve erken testler |
-| **[↓ Mac için kararlı sürümü indir](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg)** | **[↓ Beta sürümünü indir](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/MacBattery-1.4.1-beta.2.dmg)** |
-| [Sürüm notları](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/SHA256SUMS) | [Beta notları](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/SHA256SUMS) |
+| **[↓ Mac için kararlı sürümü indir](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg)** | **[↓ Beta sürümünü indir](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/Wattelier-1.5.0-beta.2.dmg)** |
+| [Sürüm notları](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/SHA256SUMS) | [Beta notları](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/SHA256SUMS) |
 
 </div>
 <!-- DOWNLOADS:END -->
@@ -59,7 +59,7 @@ Mac'in güç akışını, pil sağlığını ve uygulama etkinliğini tek bakı�
 | :---: | :---: |
 | <img src="assets/screenshots/overview-dark.png" width="370" alt="MacBattery koyu görünümlü pil ve güç akışı paneli" /> | <img src="assets/screenshots/applications.png" width="370" alt="MacBattery uygulama etkinliği paneli" /> |
 
-<sub>Görseller önceki kararlı 1.3.0 arayüzünden, temsili verilerle hazırlanmıştır. En yeni 1.4.1 sürümünün arayüzü farklılaşabilir.</sub>
+<sub>Görseller önceki kararlı 1.3.0 arayüzünden, temsili verilerle hazırlanmıştır. Yeni Wattelier 1.5.0-beta.2 sürümünün arayüzü farklılaşabilir.</sub>
 
 ## 📦 Üç adımda kurulum
 
