@@ -4,47 +4,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>Wattelier 1.6.0</title>
-            <pubDate>Sun, 18 Oct 2026 21:29:51 +0300</pubDate>
-            <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.6.0</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.6.0</sparkle:version>
-            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <title>Wattelier 1.6.1</title>
+            <pubDate>Mon, 19 Oct 2026 00:20:51 +0300</pubDate>
+            <link>https://github.com/Enes-Somuncular/Wattelier-Releases/releases</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.1</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.6.1</sparkle:version>
+            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## Wattelier 1.6.0 — Enerji, daha anlaşılır
+            <description sparkle:format="markdown">## Wattelier 1.6.1 — Şarj sınırına hızlı erişim
 
-Kullanıcının Mac üzerinde deneyip onayladığı **1.6.0 Beta 3 kodu**, kararlı sürüm kimliğiyle yeniden derlendi ve paketlendi. Beta arşivleri değiştirilmedi.
+Bu sürüm 1.6.0 üzerinde küçük bir kullanım kolaylığı düzeltmesidir.
 
-### Birleşik Analiz
+- **Tek düğme:** Koruma → **Şarj sınırı ayarlarını aç**; macOS'un Pil ayarlarındaki şarj bilgisi penceresini açmayı dener. macOS alt pencere bağlantısını desteklemiyorsa Pil sayfasında Şarj yanındaki **ⓘ** düğmesine basılabilir.
+- **Kestirme kurulumu gerekmiyor:** Eski Apple Kestirmeler kurulum / kontrol / çalıştırma adımları ve paket içindeki kestirme kaldırıldı. Kullanıcının bilgisayarına daha önce eklediği kestirmelere dokunulmaz.
+- **Yerleşik Apple sınırı:** Apple Silicon Mac ve macOS Tahoe 26.4+ üzerinde %80–%100 sınırı macOS tarafından yönetilir. Daha eski sistemlerde Optimize Edilmiş Pil Şarjı kullanılır.
+- **Koruma ve geçmiş aynı:** Pil ve uygulama enerji geçmişi, bildirimler, tercih kayıtları, grafikler ve Sparkle otomatik güncelleme sistemi korunur.
+- **Güvenlik:** Wattelier şarj kontrolü için özel firmware API'si, Accessibility otomasyonu, terminal komutu veya Kestirmeler kullanmaz. Kullanıcının sistem şarj sınırını okumaz veya kendiliğinden değiştirmez.
 
-- Genel bakış, Analiz ve Koruma ile sade gezinme.
-- Anlık görünümde çalışan uygulamalar, CPU/RAM, tahmini Watt ve canlı güç grafiği.
-- Geçmiş görünümünde pil ve uygulama enerjisi için ortak Bugün / Son 7 gün filtresi, karşılaştırmalar ve yerel kayıt kontrolleri.
-
-### Canlı güç akışı ve akıcı arayüz
-
-- Adaptörden Mac’e kehribar, şarj olan pile turkuaz elektrik hattı. Pil dolu veya şarj beklemedeyken pil kolu sönük kalır.
-- Pille çalışırken tek hat; ölçülemeyen şarj gücü için “—”. Adaptör kapasitesi ve tahmini anlık giriş ayrı gösterilir.
-- Dairesel pil göstergesi, kayan sekme seçimi, kart geçişleri, basma/fare geri bildirimi ve desteklenen macOS sürümlerinde sayısal animasyonlar.
-- Hareketi Azalt desteği; açılır pencere kapalıyken elektrik akışı animasyonu durur.
-
-### Daha sakin bildirimler
-
-- Tam dolum uyarısı macOS’un gerçek tam dolum durumunu bekler. Zaten tam doluyken açılış sessizdir.
-- Tekrar engeli yeniden açılış ve tercih değişikliklerinde korunur; yeniden uyarı için pilin önce %95 veya altına düşmesi gerekir.
-- Uygulamanın macOS ikon kaydı bildirim altyapısından önce yenilenir. Koruma ekranında isteğe bağlı test bildirimi bulunur.
-
-### Uyumluluk ve gizlilik
-
-Görünür marka **Wattelier**. Eski kurulumlarla yerinde güncelleme için iç paket adı `MacBattery.app`, `com.enes.MacBattery` kimliği, yerel kayıt yolları ve Ed25519 anahtarı korunur. Pil ve uygulama geçmişi bu Mac’te tutulur; uygulama geçmişi varsayılan kapalıdır. Watt/Wh değerleri tahminidir.
-
-Apple Silicon ve macOS 13+ gerekir. Şarj sınırı, desteklenen sistemlerde kullanıcının başlattığı Apple Kestirmesiyle uygulanır; uygulama mevcut sistem sınırını okumaz.
+Gereksinimler: Apple Silicon, macOS 13+. Doğrudan şarj yüzdesi sınırı için macOS 26.4+ gereklidir.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.6.0/Wattelier-1.6.0.zip" length="3216549" type="application/octet-stream" sparkle:edSignature="4ZXWw2FkCGr3Qx4RD3tiYeRGMkIqptYcoN/EMJ+rGNdQmgIszplE1P5xa7WZ111hZ+xj2MUQwDArb+a1SfzHBA=="></enclosure>
+            <enclosure url="https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.1/Wattelier-1.6.1.zip" length="3169869" type="application/octet-stream" sparkle:edSignature="BiNBQUg6H1OGe9K7tv8/0XzbjJC60a65gQeLmWJ2UY38DW5HyMS/xogEJwY57ISHR9OAJ8hol0XwY5oQgKQNAw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: m5Edf8dNhGH6GoZMJ5FcvySf6vmK7oOqQeHKUxpC0mjU2+qb5JYif061/qkInMzjdWxQ9iAG1n2iavvtXJzvCA==
-length: 3515
+edSignature: 9IhUlUFilAFn7KU95tToA4KRhI7VHU3WI4JsdLtEXySf1BVJxw1JLGKAvBGhL1Vc4+9cxpwpopj7yAsxWj0jBg==
+length: 2781
 -->
