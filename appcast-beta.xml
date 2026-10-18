@@ -4,30 +4,27 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>Wattelier 1.6.1</title>
-            <pubDate>Mon, 19 Oct 2026 00:20:51 +0300</pubDate>
+            <title>Wattelier 1.6.2</title>
+            <pubDate>Mon, 19 Oct 2026 00:40:42 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/Wattelier-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.1</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.6.1</sparkle:version>
-            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.2</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.6.2</sparkle:version>
+            <sparkle:shortVersionString>1.6.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## Wattelier 1.6.1 — Şarj sınırına hızlı erişim
+            <description sparkle:format="markdown">## Wattelier 1.6.2 — Doğru Pil ayarları ve bildirim simgesi
 
-Bu sürüm 1.6.0 üzerinde küçük bir kullanım kolaylığı düzeltmesidir.
+- **Pil sayfası düzeltmesi:** 1.6.1'deki `?batteryhealth` bağlantısı yanlışlıkla Pil Sağlığı bilgi penceresini açıyordu. Bu sürüm doğrudan doğru Pil sayfasını açar; oradan Şarj satırındaki **alttaki ⓘ** düğmesine basılmalıdır. Apple'ın Şarj açılır penceresine belgelenmiş doğrudan URI bulunmadığı için özel API / Accessibility otomasyonu kullanılmaz.
+- **Bildirim markası:** `CFBundleDisplayName` ve ikon dosyası Wattelier olarak tutarlı; uygulamanın LaunchServices kaydı bildirim kurulumundan önce yenileniyor. macOS simge önbelleği eskiyse paket dosyasına dokunmadan `scripts/refresh-notification-icon.sh` ile yeniden kayıt yapılabilir.
+- **Uyumluluk:** `MacBattery.app` iç dosya yolu, bundle kimliği, geçmiş verileri, bildirim tercihleri ve Sparkle imzalama anahtarı korunur. 
+- **Kullanıcı testi:** macOS bildirim simgesinin gerçek görünümü işletim sistemi tarafından çizilir; kararlı yayından önce yerel bildirimle doğrulanmalıdır.
 
-- **Tek düğme:** Koruma → **Şarj sınırı ayarlarını aç**; macOS'un Pil ayarlarındaki şarj bilgisi penceresini açmayı dener. macOS alt pencere bağlantısını desteklemiyorsa Pil sayfasında Şarj yanındaki **ⓘ** düğmesine basılabilir.
-- **Kestirme kurulumu gerekmiyor:** Eski Apple Kestirmeler kurulum / kontrol / çalıştırma adımları ve paket içindeki kestirme kaldırıldı. Kullanıcının bilgisayarına daha önce eklediği kestirmelere dokunulmaz.
-- **Yerleşik Apple sınırı:** Apple Silicon Mac ve macOS Tahoe 26.4+ üzerinde %80–%100 sınırı macOS tarafından yönetilir. Daha eski sistemlerde Optimize Edilmiş Pil Şarjı kullanılır.
-- **Koruma ve geçmiş aynı:** Pil ve uygulama enerji geçmişi, bildirimler, tercih kayıtları, grafikler ve Sparkle otomatik güncelleme sistemi korunur.
-- **Güvenlik:** Wattelier şarj kontrolü için özel firmware API'si, Accessibility otomasyonu, terminal komutu veya Kestirmeler kullanmaz. Kullanıcının sistem şarj sınırını okumaz veya kendiliğinden değiştirmez.
-
-Gereksinimler: Apple Silicon, macOS 13+. Doğrudan şarj yüzdesi sınırı için macOS 26.4+ gereklidir.
+macOS 13+ ve Apple Silicon. Yerleşik şarj sınırı macOS 26.4+ için geçerlidir.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.1/Wattelier-1.6.1.zip" length="3169869" type="application/octet-stream" sparkle:edSignature="BiNBQUg6H1OGe9K7tv8/0XzbjJC60a65gQeLmWJ2UY38DW5HyMS/xogEJwY57ISHR9OAJ8hol0XwY5oQgKQNAw=="></enclosure>
+            <enclosure url="https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.2/Wattelier-1.6.2.zip" length="3169746" type="application/octet-stream" sparkle:edSignature="FNDaG8ikB4S2W/S2xGGf+7pVRLsIVvRJab+VdWS3jAX7E8bWjljn2uj6Or5DHDVM59TgAPYDivtr2rqJqqEwBQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 9IhUlUFilAFn7KU95tToA4KRhI7VHU3WI4JsdLtEXySf1BVJxw1JLGKAvBGhL1Vc4+9cxpwpopj7yAsxWj0jBg==
-length: 2781
+edSignature: UTSIV7oaz9kl5BQKCaN6iOHPgvxocwyeRRzMJpwqOLWFl73E4y8Ny/pvIPADS5ktjkFZTmBjOs1BrK3w3Q2NBA==
+length: 2636
 -->
