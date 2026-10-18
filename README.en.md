@@ -10,7 +10,7 @@
 
 Where does your Mac’s energy go? Follow its charge, power flow and app activity from the menu bar.
 
-**[↓ Download Wattelier 1.6.0](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/Wattelier-1.6.0.dmg)** · [Release notes](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.0) · [All releases](https://github.com/Enes-Somuncular/Wattelier-Releases/releases)
+**[↓ Download latest stable Wattelier](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/latest)** · [Release notes](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.0) · [All releases](https://github.com/Enes-Somuncular/Wattelier-Releases/releases)
 
 Apple Silicon · macOS 13+ · Turkish app interface · Light and dark appearance
 
@@ -47,7 +47,7 @@ Full-charge alerts wait for macOS to report actual completion. Launching while a
 
 ## Download and install
 
-1. Download and open **[Wattelier 1.6.0 DMG](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/Wattelier-1.6.0.dmg)**.
+1. Open the **[latest stable Wattelier release](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/latest)** and download its DMG under *Assets*.
 2. Drag Wattelier into **Applications**.
 3. Open the installed app and click its battery icon in the menu bar.
 
