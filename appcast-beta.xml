@@ -4,29 +4,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>MacBattery 1.3.0-beta.1</title>
-            <pubDate>Sun, 18 Oct 2026 15:59:07 +0300</pubDate>
+            <title>MacBattery 1.3.0-beta.2</title>
+            <pubDate>Sun, 18 Oct 2026 16:29:21 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.3.0-beta.1</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.3.0b1</sparkle:version>
-            <sparkle:shortVersionString>1.3.0-beta.1</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.3.0-beta.2</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.3.0b2</sparkle:version>
+            <sparkle:shortVersionString>1.3.0-beta.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## MacBattery 1.3.0 Beta 1
+            <description sparkle:format="markdown">## MacBattery 1.3.0 Beta 2
 
-Bu sürüm, kararlı yayın öncesi deneme içindir. Beta kanalını Ayarlar → Güncellemeler bölümünden açıp kapatabilirsiniz. Beta kapatıldığında yüklü sürüm otomatik olarak düşürülmez; daha yeni kararlı sürüm çıktığında ona geçilir.
+- Koruma sekmesinden Apple’ın yerleşik şarj sınırını değiştirme: “Şarj sınırını seç…” düğmesi Apple’ın %80, %85, %90, %95 ve %100 seçim penceresini açar.
+- İlk kullanımda “Kestirmeyi ekle…” ile hazır kestirmeyi bir kez ekleyin, sonra MacBattery’ye dönüp “Yeniden denetle”ye basın. Yalnızca Apple’ın Pil Şarj Sınırını Ayarla eylemini içerir.
+- Apple Silicon ve macOS 26.4 veya üzeri gerekir. Diğer sistemlerde Pil ayarlarına yönlendirme korunur.
+- İşlem yalnızca düğmeye bastığınızda çalışır. Seçtiğiniz tercih macOS tarafından yönetilir; uygulamayı kapatmak veya beta kanalından çıkmak tercihi geri almaz. Değiştirmek için yine sınır seçebilir veya macOS Pil ayarlarını kullanabilirsiniz.
+- Kestirme eksikse, ad çakışması varsa, iptal edilirse veya zaman aşımı yaşanırsa durum açıkça gösterilir. Sistem sınırı uygulama tarafından okunmadığından ölçülmüş bir yüzde veya doğrulanmamış “uygulandı” mesajı gösterilmez.
 
-- Koruma sekmesi ve Apple'ın yerleşik Pil ayarlarına erişim.
-- İsteğe bağlı şarj hedefi, tam dolum, düşük pil ve kritik pil bildirimleri.
-- Tekrar engelleme, bir saat sessize alma ve tercihleri sıfırlama.
-- İsteğe bağlı oturum açılışında başlatma.
+Bildirim hedefleri ayrı hatırlatmalardır. Bu sürüm watt sınırı, zorla deşarj, özel donanım komutları veya yetkili yardımcı servis kullanmaz. Apple ölçüm doğruluğu için zaman zaman %100’e şarj edebilir.
 
-Bildirimler başlangıçta kapalıdır. Bu sürüm şarjı doğrudan durdurmaz ve watt sınırı uygulamaz. Hatırlatma hedefi macOS şarj sınırını değiştirmez; güç/firmware ayarlarına yazılmaz.
+Bu bir beta deneme sürümüdür; kararlı kanal 1.2.0 olarak kalır.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.3.0-beta.1/MacBattery-1.3.0-beta.1.zip" length="1432450" type="application/octet-stream" sparkle:edSignature="7Tr7YFYBBBQYiGu5vMONx+TvFs1XJJ02m9ADQKNWHoL4SVGa+0P1VRQMaiu8Gfj54cbfosK2eRRJLm3IjGBZBw=="></enclosure>
+            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.3.0-beta.2/MacBattery-1.3.0-beta.2.zip" length="1475695" type="application/octet-stream" sparkle:edSignature="cAPbd+9nEPRlsuMEceAGb7ZSIn76G1P2zdUcDsmN26TZ+xJyUmB8GLc9uQuYIZgikYh5TZUy3eDcYQUu4mkZBA=="></enclosure>
         <sparkle:channel>beta</sparkle:channel></item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: fFjPW1f9ayU9trcJZrbydYVECwurDDLA6HtOfhRo06xfDOijFciMKTV1OfXSPf/99UwNMXcIYtgSSMcQjyvgCg==
-length: 2324
+edSignature: 15bvRT3i+fIYcRA8/fNcB2uyJS90qlzTFXNqc2KF+16ZBJ50fE7PmiJbtpD1w01HNbZfChJ8DEa90x4QArHOCQ==
+length: 2920
 -->
