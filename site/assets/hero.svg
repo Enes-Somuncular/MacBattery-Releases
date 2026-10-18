@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Wattelier — Gücü daha net gör</title><desc id="desc">Mac için pil ve güç analizi uygulamasının temsili arayüzü</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#141F31"/><stop offset="1" stop-color="#070C15"/></linearGradient>
+<linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1D2B3D"/><stop offset="1" stop-color="#101927"/></linearGradient>
+<linearGradient id="mint" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#73E9D5"/><stop offset="1" stop-color="#D8FC7E"/></linearGradient>
+<pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#7292AD" stroke-opacity=".06"/></pattern>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="35"/></filter>
+</defs>
+<rect width="1200" height="520" rx="28" fill="url(#bg)"/><rect width="1200" height="520" rx="28" fill="url(#grid)"/>
+<ellipse cx="845" cy="260" rx="300" ry="200" fill="#65D9BC" opacity=".08" filter="url(#shadow)"/>
+<g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+<rect x="50" y="50" width="58" height="58" rx="16" fill="#1D3342" stroke="#538277" stroke-opacity=".5"/>
+<path d="M61 72l8 23 10-19 10 19 8-23" fill="none" stroke="url(#mint)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="122" y="91" fill="#F4FAFC" font-size="32" font-weight="700" letter-spacing="-1">wattelier</text>
+<rect x="50" y="156" width="155" height="31" rx="15.5" fill="#1F3C3C"/><circle cx="70" cy="171.5" r="5" fill="#D8FC7E"/><text x="85" y="177" fill="#9BEED7" font-size="13" font-weight="600">POWER, CLARIFIED.</text>
+<text x="50" y="255" fill="#FAFDFE" font-size="49" font-weight="700" letter-spacing="-1.8">Pil yüzdesinin</text>
+<text x="50" y="317" fill="url(#mint)" font-size="49" font-weight="700" letter-spacing="-1.8">ötesini gör.</text>
+<text x="52" y="370" fill="#ADC1D0" font-size="19">Güç akışı, pil sağlığı ve uygulama etkinliği.</text>
+<text x="52" y="399" fill="#ADC1D0" font-size="19">Mac'in enerjisini tek bakışta anla.</text>
+<text x="52" y="464" fill="#7E95A7" font-size="14">macOS 13+  ·  Apple Silicon  ·  Menü çubuğu</text>
+<rect x="633" y="72" width="510" height="387" rx="24" fill="#0B101B" stroke="#4E6973" stroke-opacity=".65"/>
+<rect x="651" y="90" width="474" height="351" rx="16" fill="url(#card)" stroke="#75929C" stroke-opacity=".24"/>
+<circle cx="674" cy="111" r="5" fill="#E77471"/><circle cx="692" cy="111" r="5" fill="#EFBA62"/><circle cx="710" cy="111" r="5" fill="#80D79E"/>
+<text x="679" y="160" fill="#AEC3D2" font-size="14">CANLI GÜÇ AKIŞI</text>
+<text x="682" y="225" fill="#F3FCFC" font-size="57" font-weight="700" letter-spacing="-2">28.2<tspan font-size="25" fill="#98B3BB"> W</tspan></text>
+<rect x="928" y="188" width="156" height="34" rx="17" fill="#193C35"/><text x="947" y="210" fill="#A8F5BD" font-size="14">●  Şarj oluyor</text>
+<rect x="679" y="250" width="405" height="13" rx="6.5" fill="#2D4050"/><rect x="679" y="250" width="255" height="13" rx="6.5" fill="url(#mint)"/>
+<text x="679" y="298" fill="#BACCD7" font-size="14">BATARYAYA</text><text x="679" y="337" fill="#D7F9E7" font-size="29" font-weight="650">17.4 W</text>
+<text x="932" y="298" fill="#BACCD7" font-size="14">SİSTEME</text><text x="932" y="337" fill="#D5E4F3" font-size="29" font-weight="650">10.8 W</text>
+<path d="M679 400 L709 391 738 398 768 380 800 388 833 373 860 383 891 362 926 373 960 350 993 360 1024 341 1056 350 1084 337" stroke="#8DF1D9" fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M679 407L1084 407" stroke="#577187" stroke-opacity=".25"/>
+<text x="1093" y="479" text-anchor="end" fill="#6C8292" font-size="11">Temsili değerler</text>
+</g></svg>

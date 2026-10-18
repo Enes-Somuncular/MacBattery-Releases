@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#070C15">
+<meta name="description" content="Wattelier: Mac'in güç akışını, pil sağlığını ve uygulama etkinliğini tek bakışta gösteren yerel macOS menü çubuğu uygulaması.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wattelier — Power, clarified.">
+<meta property="og:description" content="Pil yüzdesinin ötesini gör. Mac için zarif güç analitiği."><meta property="og:image" content="https://raw.githubusercontent.com/Enes-Somuncular/MacBattery-Releases/main/site/assets/hero.svg">
+<title>Wattelier — Power, clarified.</title>
+<link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;color:#f4fafc;background:#070c15;font-synthesis:none;font-optical-sizing:auto;-webkit-font-smoothing:antialiased;--bg:#070c15;--panel:#121d2b;--mint:#73e9d5;--lime:#d8fc7e;--soft:#a9c0cf;--line:rgba(160,199,213,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--mint);color:#06141a}
+.skip{position:absolute;left:12px;top:-60px;padding:12px 15px;background:var(--lime);color:#101820;z-index:100;border-radius:10px}.skip:focus{top:12px}
+.wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(7,12,21,.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(170,202,215,.1)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.wordmark{display:inline-flex;align-items:center;gap:11px;font-size:21px;font-weight:780;letter-spacing:-.06em}.wordmark img{width:38px;height:38px}
+.nav-links{display:flex;gap:32px;align-items:center;font-size:14px;color:#c5d5de}.nav-links a:hover,.footer a:hover{color:var(--lime)}
+.nav-download{padding:12px 18px!important;border:1px solid #8ad7be80;border-radius:100px;color:#ebfff4!important;background:#172d2a}
+.ambient{position:absolute;width:680px;height:680px;border-radius:50%;filter:blur(100px);background:radial-gradient(circle,rgba(76,196,156,.15),transparent 70%);pointer-events:none;right:-180px;top:-120px;z-index:-1}
+.hero{position:relative;padding:110px 0 100px;min-height:770px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(440px,1fr);align-items:center;gap:58px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(130,235,205,.25);background:#102625;border-radius:30px;padding:10px 15px;color:#b4f8e3;text-transform:uppercase;letter-spacing:.125em;font-size:11px;font-weight:700}
+.pulse{height:7px;width:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px rgba(216,252,126,.8)}
+h1{font-size:clamp(54px,6.3vw,90px);letter-spacing:-.078em;line-height:1.06;margin:27px 0 22px;font-weight:760}
+.gradient-text{background:linear-gradient(100deg,var(--mint),var(--lime));background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero-copy{color:var(--soft);font-size:18px;line-height:1.8;max-width:520px;margin:0 0 35px}
+.button-row{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:16px 22px;border-radius:12px;min-height:53px;font-size:15px;font-weight:700;transition:transform .18s,background .18s,border-color .18s}
+.btn:hover{transform:translateY(-2px)}.btn-primary{color:#0b191a;background:linear-gradient(110deg,#83f2d5,#d7fb7f);box-shadow:0 10px 40px rgba(115,233,213,.15)}.btn-secondary{color:#f3f9fa;background:#172230;border:1px solid rgba(167,195,207,.28)}
+.hero-note{display:flex;gap:17px;flex-wrap:wrap;margin-top:24px;font-size:12px;color:#849cae}.hero-note span::before{content:"✓";margin-right:6px;color:var(--mint)}
+.preview-wrap{position:relative;perspective:900px;padding-top:45px}
+.preview-glow{position:absolute;inset:40px 10px 10px;background:#69e8c2;filter:blur(85px);opacity:.13;z-index:-1}
+.preview{border:1px solid rgba(170,206,222,.25);background:linear-gradient(145deg,#1a2937,#0f1723);border-radius:24px;box-shadow:0 35px 90px #0008,0 0 0 9px #f4ffff04;padding:25px;transform:rotate(-2deg);animation:float 7s ease-in-out infinite}
+.window-top{display:flex;align-items:center;justify-content:space-between;color:#8fa8bb;font-size:12px;padding-bottom:22px}.dots{display:flex;gap:7px}.dots i{display:block;width:8px;height:8px;border-radius:50%;background:#425369}.dots i:first-child{background:#e6817e}.dots i:nth-child(2){background:#ebbe6e}.dots i:nth-child(3){background:#78d7a7}
+.top-stat{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}.overline{text-transform:uppercase;font-size:10px;font-weight:750;letter-spacing:.15em;color:#8da8b5}.big-number{font-size:clamp(48px,5vw,69px);font-weight:740;letter-spacing:-.08em;line-height:1.35;font-variant-numeric:tabular-nums}.big-number small{font-size:22px;color:#9cb3be;letter-spacing:0}.live{font-size:12px;color:#a6f2c1;background:#19362d;padding:9px 12px;border-radius:20px;white-space:nowrap}
+.meter{height:12px;background:#283747;border-radius:100px;overflow:hidden;margin:22px 0 17px}.meter div{height:100%;width:62%;border-radius:100px;background:linear-gradient(90deg,#66dfd3,#dbfa85)}
+.two-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{border:1px solid var(--line);border-radius:14px;padding:17px;background:#ffffff05}.stat strong{font-size:24px;letter-spacing:-.04em;display:block;margin-top:12px;font-variant-numeric:tabular-nums}.stat strong.mint{color:#a6f6d4}.stat strong.blue{color:#c7e0f0}
+.chart{margin-top:14px;background:#101b27;border:1px solid var(--line);border-radius:14px;padding:14px 14px 2px}.chart-label{display:flex;justify-content:space-between;color:#899eae;font-size:11px}.chart svg{width:100%;height:auto;display:block}.preview-caption{color:#758c9e;text-align:center;font-size:11px;margin-top:20px}
+.section{padding:100px 0;border-top:1px solid rgba(170,200,217,.09)}.section-kicker{text-transform:uppercase;font-size:12px;font-weight:760;letter-spacing:.18em;color:var(--mint)}.section h2{font-size:clamp(36px,4.5vw,60px);letter-spacing:-.065em;line-height:1.12;margin:18px 0 15px;max-width:720px}.section-lead{font-size:17px;color:var(--soft);line-height:1.75;max-width:670px;margin:0 0 48px}
+.features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.feature{min-height:244px;padding:28px;border-radius:19px;border:1px solid var(--line);background:linear-gradient(150deg,#152334,#0e1722);position:relative;overflow:hidden}.feature:before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at 90% 0%,rgba(124,238,197,.07),transparent 45%);pointer-events:none}.feature-icon{font-family:monospace;font-size:24px;display:grid;place-items:center;border-radius:13px;background:#203933;color:var(--lime);width:47px;height:47px}.feature h3{margin:24px 0 8px;font-size:20px;letter-spacing:-.035em}.feature p{font-size:14px;line-height:1.8;color:#a7becd;margin:0}
+.accent-section{background:linear-gradient(180deg,#0a111c,#0c1420)}.insight{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.mock-rows{border:1px solid var(--line);background:#142130;border-radius:21px;padding:26px;box-shadow:0 30px 65px #0003}.mock-head{display:flex;justify-content:space-between;color:#d6e9eb;font-size:14px;margin-bottom:14px}.mock-label{font-size:10px;text-transform:uppercase;color:#8ba6b6;letter-spacing:.16em}.mock-row{padding:19px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px}.mock-row:last-child{border:0}.mock-row b{font-size:15px}.mock-row small{display:block;font-size:11px;color:#829dac;margin-top:7px}.mock-row strong{font-variant-numeric:tabular-nums;color:#d2f8c9}.app-icon{width:37px;height:37px;border-radius:10px;display:grid;place-items:center;background:#304b54;margin-right:13px;color:#9ce9dc}.app-info{display:flex;align-items:center}
+.insight-note{color:#98b0c1;font-size:14px;line-height:1.8;margin-top:22px}.install-panel{padding:55px;border:1px solid rgba(132,226,190,.3);border-radius:26px;background:linear-gradient(140deg,#19332f,#111e2b 65%);position:relative;overflow:hidden}.install-panel:after{content:"";position:absolute;width:350px;height:350px;background:radial-gradient(circle,rgba(182,252,132,.14),transparent 70%);right:-100px;top:-100px;pointer-events:none}.install-panel h2{position:relative;z-index:1}.downloads{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 17px;position:relative;z-index:1}.download-status{display:flex;gap:25px;flex-wrap:wrap;font-size:12px;color:#a6c3cd;position:relative;z-index:1}.download-status strong{color:#d5e7ed;font-weight:650}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.step{border:1px solid var(--line);padding:25px;border-radius:16px;background:#111b28}.step span{color:var(--mint);font-size:12px;letter-spacing:.14em;font-weight:750}.step h3{font-size:17px;margin:15px 0 8px}.step p{font-size:13px;color:#9eb5c1;line-height:1.75;margin:0}
+.faq{max-width:810px}.faq details{border-bottom:1px solid var(--line);padding:21px 2px}.faq summary{cursor:pointer;font-weight:650;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:25px}.faq summary::after{content:"+";color:var(--mint);font-weight:400;font-size:24px}.faq details[open] summary::after{content:"−"}.faq p{color:var(--soft);line-height:1.85;font-size:14px;max-width:720px}
+.footer{padding:36px 0 55px;border-top:1px solid var(--line);color:#8aa5b5;font-size:13px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-links{display:flex;gap:23px}.footer .wordmark{color:#e4f4f4;font-size:18px}.footer .wordmark img{width:29px;height:29px}
+@keyframes float{50%{transform:translateY(-9px) rotate(-2deg)}}
+@media(max-width:940px){.hero{padding:75px 0}.hero-grid,.insight{grid-template-columns:1fr;gap:46px}.preview-wrap{max-width:650px;width:100%;margin:auto;padding-top:0}.features{grid-template-columns:repeat(2,1fr)}.nav-links{gap:18px}.hero{min-height:auto}.section{padding:72px 0}}
+@media(max-width:620px){.wrap{width:min(100% - 32px,1180px)}.nav{min-height:68px}.nav-links a:not(.nav-download){display:none}.nav-download{padding:10px 14px!important}.hero{padding:56px 0 64px}h1{font-size:clamp(51px,12vw,70px)}.hero-copy{font-size:16px}.preview{padding:16px;border-radius:18px;transform:none;animation:none}.big-number{font-size:52px}.features,.steps{grid-template-columns:1fr}.feature{min-height:190px}.section{padding:62px 0}.install-panel{padding:29px 20px}.downloads{flex-direction:column;align-items:stretch}.downloads a{text-align:center}.footer-inner{flex-direction:column;align-items:flex-start}.footer-links{flex-wrap:wrap}.section h2{font-size:39px}.insight{gap:30px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+@media(max-width:620px){#gercek-gorunum .features{grid-template-columns:1fr!important}#gercek-gorunum .feature{padding:14px}}</style>
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header"><nav class="wrap nav" aria-label="Ana menü">
+<a class="wordmark" href="#top" aria-label="Wattelier, ana sayfa"><img src="./assets/logo.svg" alt="" width="38" height="38">wattelier</a>
+<div class="nav-links"><a href="#ozellikler">Özellikler</a><a href="#yaklasim">Nasıl çalışır?</a><a href="#sss">SSS</a><a class="nav-download" href="#indir">İndir ↗</a></div>
+</nav></header>
+<main id="main"><section class="hero" id="top"><div class="ambient"></div><div class="wrap hero-grid">
+<div><span class="eyebrow"><span class="pulse"></span> macOS için güç analitiği</span><h1>Pil yüzdesinin<br><span class="gradient-text">ötesini gör.</span></h1><p class="hero-copy">Mac'inin enerjisini yalnızca kaçta kaldığıyla değil, nereye aktığıyla anla. Anlık güç akışı, pil sağlığı ve uygulama etkinliği — tek bir sade menü çubuğunda.</p>
+<div class="button-row"><a class="btn btn-primary" data-release="stable" href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg" rel="noopener"><span>Kararlı 1.4.1 indir</span> <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" data-release="beta" href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/MacBattery-1.4.1-beta.2.dmg" rel="noopener"><span>Beta 1.4.1-beta.2 indir</span> <span aria-hidden="true">↗</span></a></div>
+<div class="hero-note"><span>macOS 13+</span><span>Apple Silicon</span><span>Yerel Mac uygulaması</span></div></div>
+<div class="preview-wrap"><div class="preview-glow"></div><div class="preview" aria-label="Güç akışını gösteren temsili tasarım">
+<div class="window-top"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span>POWER OVERVIEW</span><span>◉ &nbsp;•••</span></div>
+<div class="top-stat"><div><div class="overline">Adaptör girişi</div><div class="big-number">28.2<small> W</small></div></div><span class="live">● Şarj oluyor</span></div>
+<div class="meter" aria-hidden="true"><div></div></div><div class="two-stats"><div class="stat"><div class="overline">Bataryaya</div><strong class="mint">17.4 W</strong></div><div class="stat"><div class="overline">Sisteme</div><strong class="blue">10.8 W</strong></div></div>
+<div class="chart"><div class="chart-label"><span>Güç geçmişi</span><span>Son ~80 sn</span></div><svg viewBox="0 0 440 110" role="img" aria-label="Temsili güç eğrisi"><path d="M0 90H440M0 53H440M0 15H440" stroke="#496173" stroke-opacity=".26"/><path d="M0 83 27 78 53 84 81 59 105 68 136 49 159 57 188 31 219 42 247 34 274 55 301 29 327 38 351 20 381 32 410 17 440 22" fill="none" stroke="#91eed7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2"/><path d="M0 99 29 94 56 97 89 89 114 94 148 78 175 86 208 75 237 82 267 69 296 74 327 61 359 70 394 59 440 64" fill="none" stroke="#a7c8ef" stroke-opacity=".8" stroke-width="2.5"/></svg></div></div><p class="preview-caption">Ürün arayüzünü anlatan temsili görselleştirme; gerçek zamanlı ölçüm değildir.</p></div>
+</div></section>
+<section id="ozellikler" class="section"><div class="wrap"><span class="section-kicker">Tek bakışta daha fazlası</span><h2>Detaylı veriler.<br>Son derece sade deneyim.</h2><p class="section-lead">Ayrı ayrı pencerelere değil, macOS menü çubuğunda ihtiyacın olan bilgiye odaklan.</p>
+<div class="features">
+<article class="feature"><span class="feature-icon" aria-hidden="true">↯</span><h3>Canlı güç akışı</h3><p>Adaptörden gelen gücün batarya ve sistem arasında nasıl dağıldığını watt cinsinden izle.</p></article>
+<article class="feature"><span class="feature-icon" aria-hidden="true">⌁</span><h3>Güç geçmişi</h3><p>Şarj ve tüketim değerlerinin kısa dönemli dalgalanmalarını çizgi grafiklerinde gör.</p></article>
+<article class="feature"><span class="feature-icon" aria-hidden="true">◉</span><h3>Pil sağlığı</h3><p>Doluluk, batarya kapasitesi, döngü sayısı ve şarj durumunu anlaşılır biçimde keşfet.</p></article>
+<article class="feature"><span class="feature-icon" aria-hidden="true">⌘</span><h3>Uygulama etkinliği</h3><p>Açık uygulamaların tahmini güç yükünü CPU, RAM ve çalışma süresiyle birlikte incele.</p></article>
+<article class="feature"><span class="feature-icon" aria-hidden="true">◷</span><h3>Dolum tahmini</h3><p>Değişen şarj koşullarına göre yaklaşık tam dolum süresini takip et.</p></article>
+<article class="feature"><span class="feature-icon" aria-hidden="true">▣</span><h3>Yerel Mac hissi</h3><p>SwiftUI / AppKit tabanlı, Dock'ta yer kaplamadan çalışan bir menü çubuğu deneyimi.</p></article>
+</div></div></section>
+<section id="yaklasim" class="section accent-section"><div class="wrap insight"><div><span class="section-kicker">Veride şeffaflık</span><h2>Rakamları göster.<br><span class="gradient-text">Anlamını da anlat.</span></h2><p class="section-lead">Wattelier, sistemin sunduğu pil ve güç telemetrisini okunabilir hale getirir. Uygulama bazlı güç değerleri ise işlemci etkinliği gibi verilere dayanan tahminlerdir; bağımsız donanım ölçümü olarak sunulmaz.</p><p class="insight-note">Ölçümler anlık yük, adaptör ve sistem davranışına göre değişebilir. Dolum süresi kesin bir vaat değildir.</p></div>
+<div class="mock-rows" aria-label="Örnek uygulama etkinliği listesi"><div class="mock-head"><b>Uygulama etkinliği</b><span class="mock-label">Örnek değerler</span></div>
+<div class="mock-row"><div class="app-info"><span class="app-icon" aria-hidden="true">⌘</span><span><b>Uygulama A</b><small>CPU • RAM • süre</small></span></div><strong>~2.8 W</strong></div>
+<div class="mock-row"><div class="app-info"><span class="app-icon" aria-hidden="true">◈</span><span><b>Uygulama B</b><small>CPU • RAM • süre</small></span></div><strong>~1.4 W</strong></div>
+<div class="mock-row"><div class="app-info"><span class="app-icon" aria-hidden="true">▤</span><span><b>Uygulama C</b><small>CPU • RAM • süre</small></span></div><strong>~0.6 W</strong></div>
+<div class="mock-label" style="margin-top:20px">Tahmini uygulama tüketimi · gerçek veri değil</div>
+</div></div></section>
+<section id="gercek-gorunum" class="section"><div class="wrap"><span class="section-kicker">Gerçek uygulamadan örnekler</span><h2>Mac'inle uyumlu,<br><span class="gradient-text">senin ritmine yakın.</span></h2><p class="section-lead">Uygulamanın önceki kararlı 1.3.0 sürümünden örnek arayüz görünümleri. Güncel 1.4.1 sürümünde ayrıntılar farklı olabilir.</p><div class="features" style="grid-template-columns:repeat(2,minmax(0,1fr))"><figure class="feature" style="min-height:0;margin:0"><img style="width:100%;height:auto;border-radius:13px" loading="lazy" src="https://raw.githubusercontent.com/Enes-Somuncular/MacBattery-Releases/main/assets/screenshots/overview-dark.png" alt="MacBattery koyu tema pil ve güç paneli örneği"><figcaption style="color:#9db9c6;margin-top:12px;font-size:13px">Koyu görünüm · 1.3.0 arayüz örneği</figcaption></figure><figure class="feature" style="min-height:0;margin:0"><img style="width:100%;height:auto;border-radius:13px" loading="lazy" src="https://raw.githubusercontent.com/Enes-Somuncular/MacBattery-Releases/main/assets/screenshots/applications.png" alt="MacBattery uygulama etkinliği paneli örneği"><figcaption style="color:#9db9c6;margin-top:12px;font-size:13px">Uygulama etkinliği · 1.3.0 arayüz örneği</figcaption></figure></div></div></section><section id="indir" class="section"><div class="wrap"><div class="install-panel"><span class="section-kicker">Get Wattelier</span><h2>Mac'inin enerjisini<br>yeniden keşfet.</h2><p class="section-lead" style="margin-bottom:0">GitHub Releases üzerinden kararlı veya beta kanalını seç. Marka geçişi sırasında kurulum dosyalarının adı <strong style="color:#f3fff8">MacBattery</strong> olarak kalır.</p>
+<div class="downloads"><a class="btn btn-primary" data-release="stable" href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg" rel="noopener"><span>Kararlı 1.4.1 indir</span> ↗</a><a class="btn btn-secondary" data-release="beta" href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/MacBattery-1.4.1-beta.2.dmg" rel="noopener"><span>Beta 1.4.1-beta.2 indir</span> ↗</a></div>
+<div class="download-status"><span>Kararlı: <strong id="stable-version">v1.4.1</strong></span><span>Beta: <strong id="beta-version">v1.4.1-beta.2</strong></span></div></div>
+<div class="steps"><div class="step"><span>01 / EDİN</span><h3>Uygun sürümü seç</h3><p>İndirme bağlantısından son kararlı veya beta DMG dosyasını edin.</p></div><div class="step"><span>02 / YÜKLE</span><h3>Applications'a taşı</h3><p>DMG'yi aç ve MacBattery.app dosyasını Applications klasörüne sürükle.</p></div><div class="step"><span>03 / KEŞFET</span><h3>Menü çubuğundan aç</h3><p>macOS ilk çalıştırmada onay isteyebilir. Ardından menü çubuğundan güç verilerini izle.</p></div></div>
+</div></section>
+<section id="sss" class="section"><div class="wrap faq"><span class="section-kicker">Sık sorulanlar</span><h2>Merak ettiklerin.</h2>
+<details><summary>Wattelier ücretsiz mi?</summary><p>Bu yayın deposunda uygulama için ayrı bir fiyatlandırma veya açık kaynak lisansı belirtilmemiştir. İndirme dosyaları kamusaldır; kaynak kod bu depoda bulunmaz.</p></details>
+<details><summary>Hangi Mac modellerinde çalışır?</summary><p>Proje Apple Silicon (arm64) hedefiyle derlenir ve en az macOS 13 Ventura gerektirir. Intel Mac sürümü mevcut derleme yapılandırmasında sunulmuyor.</p></details>
+<details><summary>Kararlı sürüm ile beta arasındaki fark nedir?</summary><p>Kararlı sürümler günlük kullanım için yayınlanır. Beta sürümler yeni özellikleri erken dener ve daha fazla hata içerebilir. GitHub'da beta sürümler 'Pre-release' etiketi taşır.</p></details>
+<details><summary>Uygulama gücünü watt olarak kesin mi ölçüyor?</summary><p>Hayır. Uygulama başına watt tüketimi hesaplanan yaklaşık bir değerdir. CPU ve bellek gibi sistem gözlemlerinden çıkarılır; ayrı bir donanım sayacının doğrudan ölçümü değildir.</p></details>
+<details><summary>İndirme dosyası neden görünmüyor?</summary><p>İndirme için kararlı ve beta yayınları ayrı gösterilir. İndirme gerçekleşmiyorsa GitHub Releases üzerinden mevcut varlıkları kontrol edin.</p></details>
+</div></section></main>
+<footer class="footer"><div class="wrap footer-inner"><div><a class="wordmark" href="#top"><img src="./assets/logo.svg" alt="" width="29" height="29">wattelier</a><div style="margin-top:11px">Power, clarified. &nbsp;·&nbsp; Enes Somuncular</div></div><div class="footer-links"><a href="https://github.com/Enes-Somuncular/MacBattery-Releases" rel="noopener">GitHub ↗</a><a href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg" rel="noopener">Sürümler ↗</a><a href="https://github.com/Enes-Somuncular/MacBattery-Releases/issues" rel="noopener">Geri bildirim ↗</a></div></div></footer>
+<script>
+(() => {
+  const repo = "Enes-Somuncular/MacBattery-Releases";
+  const releasesPage = "https://github.com/" + repo + "/releases";
+  function setRelease(kind, release) {
+    const buttons = document.querySelectorAll('[data-release="' + kind + '"]');
+    const versionLabel = document.getElementById(kind + "-version");
+    if (!release) {
+      versionLabel.textContent = "Henüz yayımlanmadı";
+      return;
+    }
+    const assets = Array.isArray(release.assets) ? release.assets : [];
+    const asset = assets.find(a => /\.dmg$/i.test(a.name)) || assets.find(a => /\.zip$/i.test(a.name));
+    const link = asset?.browser_download_url || release.html_url || releasesPage;
+    versionLabel.textContent = release.tag_name || "Yayınlandı";
+    for (const button of buttons) {
+      button.href = link;
+      const span = button.querySelector("span");
+      if (span) span.textContent = asset ? (kind === "stable" ? "Kararlı sürümü indir" : "Beta sürümü indir") : "Sürüm sayfasını gör";
+    }
+  }
+  fetch("https://api.github.com/repos/" + repo + "/releases?per_page=50", {headers: {"Accept":"application/vnd.github+json"}})
+    .then(r => { if(!r.ok) throw new Error("Releases erişilemiyor"); return r.json(); })
+    .then(all => { const published = all.filter(x => !x.draft); setRelease("stable", published.find(x => !x.prerelease)); setRelease("beta", published.find(x => x.prerelease)); })
+    .catch(() => { /* Özel depo veya API sınırı: kullanıcıyı doğrudan Releases sayfasına yönlendir. */ });
+})();
+</script>
+</body>
+</html>

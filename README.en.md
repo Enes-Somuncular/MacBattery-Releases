@@ -1,54 +1,88 @@
 <p align="right"><a href="README.md">Türkçe</a> · <strong>English</strong></p>
 
-# MacBattery
+<div align="center">
+<img src="site/assets/logo.svg" width="86" height="86" alt="Wattelier mark" />
 
-**Your MacBook’s battery, power flow and app consumption — in one menu bar panel.**
+# wattelier
+### Power, clarified.
 
-Apple Silicon MacBook · macOS 13 or later · Turkish interface
+**See beyond the battery percentage.**  
+Understand your Mac's power flow, battery health and app activity at a glance.
+
+<img src="site/assets/hero.svg" width="100%" alt="Wattelier power insights — illustrated product preview" />
+
+[Download](#-download-for-mac) · [Features](#-built-for-clarity) · [Install](#-install-in-three-steps) · [Beta](#-beta-channel)
+</div>
+
+---
+
+## ⬇️ Download for Mac
+
+> **Meet Wattelier.** During the brand transition, the app and DMG files retain the technical **MacBattery** name, so existing installations keep working.
 
 <!-- DOWNLOADS:START -->
-<p align="center"><a href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.3.0/MacBattery-1.3.0.dmg"><img src="assets/download-stable-en.svg" alt="Download MacBattery for Mac" width="286"></a></p>
-<p align="center"><strong>Stable 1.3.0</strong> · <a href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.3.0">Release notes</a> · <a href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.3.0/SHA256SUMS">SHA256</a><br><a href="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.0-beta.2/MacBattery-1.4.0-beta.2.dmg">Try beta · 1.4.0-beta.2</a> — Experimental</p>
+| **✦ Stable · 1.4.1** | **◇ Beta · 1.4.1-beta.2** |
+| :---: | :---: |
+| Recommended for everyday use | Early access and testing |
+| **[↓ Download stable DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg)** | **[↓ Download beta DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/MacBattery-1.4.1-beta.2.dmg)** |
+| [Release notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/SHA256SUMS) | [Beta notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/SHA256SUMS) |
 <!-- DOWNLOADS:END -->
 
-> Current builds are ad-hoc signed and are **not yet Developer ID signed or notarized by Apple**. macOS may block the first launch. See [installation notes](docs/INSTALL.md#english).
+[Browse all releases →](https://github.com/Enes-Somuncular/MacBattery-Releases/releases)
 
-<p align="center"><img src="assets/screenshots/overview-dark.png" alt="MacBattery stable 1.3.0 battery and power dashboard with sample data" width="390"></p>
+**Requirements:** Apple Silicon MacBook · macOS 13+ · no Intel build. The app currently has an **ad-hoc signature**, not an Apple Developer ID signature or Apple notarization, so macOS may request additional approval. [Safe installation guide →](docs/INSTALL.md#english)
 
-## In the stable release
+## ✨ Built for clarity
 
-- Battery level, charging/runtime estimates, cycle count and capacity information.
-- Adapter input, battery charging and estimated Mac power consumption.
-- A 30/60-second power timeline with hover inspection.
-- Searchable app CPU, memory and estimated energy consumption.
-- Optional target/full/low battery notifications.
-- Apple’s native 80–100% Charge Limit through a bundled Shortcuts action on supported Macs. Requires Apple silicon and macOS 26.4 or later.
-- Signed in-app updates and separate stable/beta channels.
+| Feature | What it does |
+| --- | --- |
+| **⚡ Power flow** | Adapter input, battery charging and estimated system power. |
+| **📈 Power history** | Short-term 30/60-second trends and inspection. |
+| **◉ Battery health** | Level, capacity, cycle count and charge state. |
+| **⌘ App activity** | CPU, RAM and **estimated** per-app energy usage. |
+| **◷ Battery journal** | Daily and weekly observed usage and local battery history. |
+| **🛡 Battery protection** | Optional alerts and Apple's charge-limit Shortcut on supported Macs. |
+| **⟳ Updates** | Separate stable and beta channels with signed updates. |
 
-Notification targets are reminders; they do not stop charging. MacBattery does not impose a Watt cap or force battery discharge. Power and app energy figures may be estimates.
+**Transparency:** Power distribution, per-app Watt numbers and journal energy figures may be estimates, not direct hardware meter readings. Charge time may be unavailable when macOS does not provide reliable data.
 
-## Install
+## ◇ App previews
 
-1. Download the stable **DMG** above and open it.
-2. Drag **MacBattery** into **Applications**.
-3. Launch it from Applications and open the panel from the menu bar.
+| Dark overview | App activity |
+| :---: | :---: |
+| <img src="assets/screenshots/overview-dark.png" width="370" alt="Dark overview panel with battery and power flow" /> | <img src="assets/screenshots/applications.png" width="370" alt="App activity view" /> |
 
-There is no Intel build. Run the app from Applications, not directly from the mounted DMG. [Installation help](docs/INSTALL.md#english) · [Report an issue](https://github.com/Enes-Somuncular/MacBattery-Releases/issues/new/choose)
+<sub>Images show the previous stable 1.3.0 UI with sample data; details may differ in 1.4.1.</sub>
 
-## Preview the beta channel
+## 📦 Install in three steps
 
-Enable **Ayarlar → Güncellemeler → Beta güncellemelerini al** to receive betas. Disabling the option does not downgrade an installed beta. New features are tested in beta before stable publication.
+1. Download the **stable DMG** above and open it.
+2. Drag **MacBattery.app** into **Applications**.
+3. Launch the installed app from Applications and open it from the menu bar.
 
-The **1.4.0 beta series** adds a local Battery Journal with daily/weekly summaries and a redesigned menu bar battery with an embedded percentage and charging badges. Journal data stays on the Mac for up to 30 days; recording can be paused or cleared. Unknown time while the app is closed or the Mac is asleep is not filled in.
+[Installation and macOS security notes](docs/INSTALL.md#english) · [Report an issue](https://github.com/Enes-Somuncular/MacBattery-Releases/issues/new/choose)
 
-<img src="assets/beta/menu-bar.png" alt="Beta menu bar battery designs in light and dark appearances" width="850">
+## ◇ Beta channel
 
-Screenshots are generated from the app with sample data. Stable screenshots show 1.3.0; beta previews are labelled separately.
+Enable **Ayarlar → Güncellemeler → Beta güncellemelerini al** in the Turkish app interface to opt into beta updates. Disabling beta updates does not automatically downgrade an installed beta.
 
-## Updates, privacy and source availability
+<details><summary><strong>See the beta previews</strong></summary>
 
-Updates are checked every six hours by default and can also be requested manually. Update archives and feeds are verified with Ed25519; these signatures do not replace Apple notarization. GitHub hosts update checks and downloads. MacBattery does not upload battery readings or the app list to a server.
+<img src="assets/beta/menu-bar.png" width="860" alt="Beta menu bar designs" />
+<img src="assets/beta/battery-journal.png" width="370" alt="Beta battery journal preview" />
+</details>
 
-This is the **public distribution repository**, not the application source repository. Application source remains private. GitHub’s automatically generated **Source code (zip/tar.gz)** downloads contain only this distribution repository’s documentation, images and update feed. Install the DMG instead.
+## 🔐 Privacy and distribution
 
-[Release history](https://github.com/Enes-Somuncular/MacBattery-Releases/releases) · [FAQ (Türkçe)](docs/FAQ.md)
+The app does not upload battery readings or running-app lists to a server. Updates and downloads use GitHub; battery-journal records stay local. Ed25519 update signatures do **not** replace Apple notarization.
+
+This repository hosts public **downloads and product documentation only**; app source code remains private. GitHub's auto-generated **Source code (zip/tar.gz)** assets are not installers. Use the DMG.
+
+---
+
+<div align="center">
+
+[Website source](site/index.html) · [All releases](https://github.com/Enes-Somuncular/MacBattery-Releases/releases) · [FAQ (Türkçe)](docs/FAQ.md) · [Brand guide](docs/BRAND.md) · [Issues](https://github.com/Enes-Somuncular/MacBattery-Releases/issues/new/choose)
+
+<sub>Wattelier · Power, clarified. · Enes Somuncular</sub>
+</div>
