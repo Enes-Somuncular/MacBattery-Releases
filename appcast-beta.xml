@@ -4,30 +4,29 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>MacBattery 1.3.0</title>
-            <pubDate>Sun, 18 Oct 2026 16:38:59 +0300</pubDate>
+            <title>MacBattery 1.4.0-beta.1</title>
+            <pubDate>Sun, 18 Oct 2026 16:50:30 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.3.0</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.3.0</sparkle:version>
-            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.0-beta.1</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.4.0b1</sparkle:version>
+            <sparkle:shortVersionString>1.4.0-beta.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## MacBattery 1.3.0
+            <description sparkle:format="markdown">## MacBattery 1.4.0 Beta 1
 
-Beta 2’de denenen pil koruma özellikleri artık kararlı sürümde.
+- Geçmiş sekmesinde yeni Pil Günlüğü: bugün ve son 7 gün için pille kullanım, adaptöre bağlı süre, aktif şarj ve gözlenen adaptör bağlantısı sayısı.
+- Kalıcı pil yüzdesi grafiği ve 7 günlük gün gün özet. Uygulama yeniden açıldığında geçmiş korunur; boş aralıklar grafikle birleştirilmez.
+- Gözlenen süreler için tahmini enerji (Wh) ve zaman ağırlıklı ortalama güç (W). Bu değerler elektrik sayacı ölçümü değildir.
+- Son 30 güne kadar kayıt yalnızca bu Mac’te saklanır. Varsayılan kayıt açıktır; Pil Günlüğü altından duraklatabilir veya onay vererek geçmişi silebilirsiniz. Kayıt duraklatıldığında mevcut geçmiş korunur.
+- Normal ölçümler dakikada bir, adaptör/şarj durumu değişince ayrıca kaydedilir. Uyku, uygulamanın kapalı olduğu süre ve eksik ölçümler kullanım süresine eklenmez. İlk özet için en az bir dakikalık güncel veri gerekir.
+- Son 30/60 saniyelik mevcut grafik Geçmiş → Anlık güç bölümünde bulunur.
 
-- Koruma sekmesinden Apple’ın yerleşik şarj sınırını seçme: %80, %85, %90, %95 veya %100. Apple Silicon ve macOS 26.4 veya üzeri gerekir.
-- İlk kullanımda hazır kestirmeyi ekleyip yeniden denetleyin. Mevcut beta kullanıcılarının aynı kestirmeyi yeniden eklemesi gerekmez.
-- İsteğe bağlı hedef, tam dolum, düşük pil ve kritik pil bildirimleri; sessize alma ve tekrar engelleme.
-- İsteğe bağlı oturum açılışında başlatma.
-- Ayarlardan açılıp kapatılabilen beta güncelleme kanalı.
-
-Bildirim hedefi sistem şarj sınırından ayrıdır. Şarj sınırı yalnızca kullanıcı Apple’ın seçim penceresinde tercih yaptığında değiştirilir. Watt sınırı, zorla deşarj veya özel donanım komutu kullanılmaz. Seçilen sınır macOS tarafından yönetilir ve uygulama kapatıldığında geri alınmaz. Mevcut sınır uygulama tarafından okunmaz.
+Bu beta yeni veri toplamaya başlar; geçmiş günlere ait kullanım uydurulmaz. Önceki 1.3.0 pil koruma ve Apple Kestirmeler özellikleri korunur. Kararlı kanal 1.3.0 olarak kalır.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.3.0/MacBattery-1.3.0.zip" length="1475685" type="application/octet-stream" sparkle:edSignature="Rkjq3p1WAyeal+luJbGBYrT40jn8aX74oo7VfmjDdPH5uHhGWOCbAmVED4/SJLm0ijq3tZTcf1WDxwLoAO4dCQ=="></enclosure>
-        </item>
+            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.0-beta.1/MacBattery-1.4.0-beta.1.zip" length="1557065" type="application/octet-stream" sparkle:edSignature="DdsGZ/wW60TnhiBAFKpzYT2MXELKZEdPLokvE0Ma1cGaHD28X1RwV5kg0aKxK4UuzUYRifnk07ITq2UwxT5IDw=="></enclosure>
+        <sparkle:channel>beta</sparkle:channel></item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 5fXzq72NtGoFMi/O2cp5g2A7Mm9neizy4yWxArIiruP4o1yVZ65t8W2Yyip+RGlnV1Z0CldEiigNy3Y06eNHAw==
-length: 2460
+edSignature: NMX6kr+llgXRY2WweOtuqvvofK0uRpvWwzYID6TitsQeqaOAhAUm4z8V2/SAXeGXHrXkVfIwWV0p52Q/oJOfBQ==
+length: 2794
 -->
