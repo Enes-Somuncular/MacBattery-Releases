@@ -1,88 +1,84 @@
 <p align="right"><a href="README.md">Türkçe</a> · <strong>English</strong></p>
 
 <div align="center">
-<img src="site/assets/logo.svg" width="86" height="86" alt="Wattelier mark" />
 
-# wattelier
-### Power, clarified.
+<img src="site/assets/logo.svg" width="86" height="86" alt="Wattelier" />
 
-**See beyond the battery percentage.**  
-Understand your Mac's power flow, battery health and app activity at a glance.
+# Wattelier
 
-<img src="site/assets/hero.svg" width="100%" alt="Wattelier power insights — illustrated product preview" />
+**Power, clarified. · See beyond the battery percentage.**
 
-[Download](#-download-for-mac) · [Features](#-built-for-clarity) · [Install](#-install-in-three-steps) · [Beta](#-beta-channel)
+Where does your Mac’s energy go? Follow its charge, power flow and app activity from the menu bar.
+
+**[↓ Download Wattelier 1.6.0](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/Wattelier-1.6.0.dmg)** · [Release notes](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.0) · [All releases](https://github.com/Enes-Somuncular/Wattelier-Releases/releases)
+
+Apple Silicon · macOS 13+ · Turkish app interface · Light and dark appearance
+
 </div>
 
----
+## Clearer energy insights in 1.6.0
 
-## ⬇️ Download for Mac
+**Overview → Analysis → Protection.** Three focused sections: the essentials at a glance, with details when you need them.
 
-> **Wattelier** is the public product name. New release archives use Wattelier; the inner **MacBattery.app** package name remains for compatibility with prior installations, preferences and Sparkle updates. The latest stable release is always available on [GitHub Releases/latest](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest).
-
-<!-- DOWNLOADS:START -->
-| **✦ Latest stable** | **◇ Most recent preview · 1.5.0-beta.2** |
+| Overview | Unified Analysis |
 | :---: | :---: |
-| Recommended for everyday use | Early access and testing |
-| **[↓ View latest stable download](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest)** | **[↓ Download latest beta DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/Wattelier-1.5.0-beta.2.dmg)** |
-| [Stable notes, DMG & checksums](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) | [Beta notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/SHA256SUMS) |
-<!-- DOWNLOADS:END -->
+| <img src="assets/screenshots/wattelier-1.6.0-overview-dark.png" width="360" alt="Wattelier 1.6.0 circular battery gauge and electrical power flow" /> | <img src="assets/screenshots/wattelier-1.6.0-analysis-dark.png" width="360" alt="Wattelier 1.6.0 shared daily battery and app-energy summary" /> |
 
-[Browse all releases →](https://github.com/Enes-Somuncular/MacBattery-Releases/releases)
+<sub>Actual 1.6.0 interface rendered with sample data.</sub>
 
-**Requirements:** Apple Silicon MacBook · macOS 13+ · no Intel build. The app currently has an **ad-hoc signature**, not an Apple Developer ID signature or Apple notarization, so macOS may request additional approval. [Safe installation guide →](docs/INSTALL.md#english)
+### See power in motion
 
-## ✨ Built for clarity
+An electrical path flows from the adapter to your Mac and, when charging, branches toward the battery. Amber represents system consumption; teal represents battery charging. The battery branch stays dim when full or paused; battery operation uses a single path. Adapter capacity and estimated live input appear separately.
 
-| Feature | What it does |
+Card transitions, a sliding tab selection and short interaction animations bring the interface to life. macOS **Reduce Motion** is respected, and electrical animation stops when the popover closes.
+
+### Apps and history, together
+
+| Section | What you can see |
 | --- | --- |
-| **⚡ Power flow** | Adapter input, battery charging and estimated system power. |
-| **📈 Power history** | Short-term 30/60-second trends and inspection. |
-| **◉ Battery health** | Level, capacity, cycle count and charge state. |
-| **⌘ App activity** | CPU, RAM and **estimated** per-app energy usage. |
-| **◷ Battery journal** | Daily and weekly observed usage and local battery history. |
-| **🛡 Battery protection** | Optional alerts and Apple's charge-limit Shortcut on supported Macs. |
-| **⟳ Updates** | Separate stable and beta channels with signed updates. |
+| **Overview / Genel bakış** | Battery level, charge state, time estimates, power distribution, health and cycle count. |
+| **Analysis / Analiz · Live / Anlık** | Running apps, CPU, RAM and estimated Watts; search, sorting and 30/60-second power charts. |
+| **Analysis / Analiz · History / Geçmiş** | A shared **Today / Last 7 days** range, battery-use summary, estimated app energy (Wh), app comparisons and the detailed battery journal. |
+| **Protection / Koruma** | Charge-target and low-battery reminders, plus Apple’s charge-limit Shortcut on supported systems, run only when you press the button. |
 
-**Transparency:** Power distribution, per-app Watt numbers and journal energy figures may be estimates, not direct hardware meter readings. Charge time may be unavailable when macOS does not provide reliable data.
+### Alerts when useful, without repeated full-charge reminders
 
-## ◇ App previews
+Full-charge alerts wait for macOS to report actual completion. Launching while already full stays quiet. Suppression survives restarts and preference changes; a new full-charge alert requires the battery to first fall to **95% or below**. Use **Test bildirimi gönder** in Protection to check notifications.
 
-| Dark overview | App activity |
-| :---: | :---: |
-| <img src="assets/screenshots/overview-dark.png" width="370" alt="Dark overview panel with battery and power flow" /> | <img src="assets/screenshots/applications.png" width="370" alt="App activity view" /> |
+## Download and install
 
-<sub>Images show the previous 1.3.0 UI with sample data; the Wattelier 1.5 series has an updated visual identity.</sub>
+1. Download and open **[Wattelier 1.6.0 DMG](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/Wattelier-1.6.0.dmg)**.
+2. Drag Wattelier into **Applications**.
+3. Open the installed app and click its battery icon in the menu bar.
 
-## 📦 Install in three steps
+**Already installed?** Choose **Güncellemeleri Denetle** in the app. Beta 3 users are also offered stable 1.6.0. Select **Ayarlar → Güncellemeler → Kararlı** for the stable channel.
 
-1. Open the [latest stable release](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) and download the DMG listed under **Assets**.
-2. Drag **MacBattery.app** into **Applications**.
-3. Launch the installed app from Applications and open it from the menu bar.
+[ZIP archive](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/Wattelier-1.6.0.zip) · [SHA256 checksums](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/SHA256SUMS) · [Installation guide](docs/INSTALL.md#english) · [Report an issue](https://github.com/Enes-Somuncular/Wattelier-Releases/issues/new/choose)
 
-[Installation and macOS security notes](docs/INSTALL.md#english) · [Report an issue](https://github.com/Enes-Somuncular/MacBattery-Releases/issues/new/choose)
+**Requirements:** Apple Silicon MacBook, macOS 13 or later. No Intel build. The app is ad-hoc signed, without Apple Developer ID signing or notarization yet. macOS may require first-launch approval; see the installation guide.
 
-## ◇ Beta channel
+## Your records stay on your Mac
 
-Enable **Ayarlar → Güncellemeler → Beta güncellemelerini al** in the Turkish app interface to opt into beta updates. Disabling beta updates does not automatically downgrade an installed beta. A previous beta may be older than the newest stable; the signed update feed determines the available version.
+- Battery and app history are stored locally for up to **30 days**.
+- App-history recording is **off by default**. Enable it, pause it or delete its records whenever you choose.
+- Battery readings and running-app lists are not uploaded. Update checks and downloads use GitHub.
+- Watt and Wh figures are **estimates**. App energy is modeled from CPU share; GPU, display and all background activity cannot be attributed precisely. Missing measurements and sleep are not counted as observed usage.
+- A charge-reminder target is not a charging limit. The Apple Shortcut runs only when you initiate it; Wattelier does not read the current system charge limit.
 
-<details><summary><strong>See the beta previews</strong></summary>
+## Beta channel and existing installations
 
-<img src="assets/beta/menu-bar.png" width="860" alt="Beta menu bar designs" />
-<img src="assets/beta/battery-journal.png" width="370" alt="Beta battery journal preview" />
-</details>
+Choose **Ayarlar → Güncellemeler → Beta** to receive future preview builds. Stable 1.6.0 rebuilds the approved Beta 3 code with stable metadata; earlier betas remain in the [release archive](https://github.com/Enes-Somuncular/Wattelier-Releases/releases). Turning off beta updates does not automatically downgrade an installed version.
 
-## 🔐 Privacy and distribution
+The visible product name is **Wattelier**. The internal **MacBattery.app** path and application identifier are retained to preserve existing MacBattery preferences, history and Sparkle updates. New downloads use **Wattelier-VERSION.dmg / .zip**; old downloads remain available.
 
-The app does not upload battery readings or running-app lists to a server. Updates and downloads use GitHub; battery-journal records stay local. Ed25519 update signatures do **not** replace Apple notarization.
-
-This repository hosts public **downloads and product documentation only**; app source code remains private. GitHub's auto-generated **Source code (zip/tar.gz)** assets are not installers. Use the DMG.
+This repository hosts **downloads and product documentation**; application source code remains private. GitHub’s automatic **Source code (zip/tar.gz)** files are not installers. Use the DMG or application ZIP.
 
 ---
 
 <div align="center">
 
-[Website source](site/index.html) · [All releases](https://github.com/Enes-Somuncular/MacBattery-Releases/releases) · [FAQ (Türkçe)](docs/FAQ.md) · [Brand guide](docs/BRAND.md) · [Issues](https://github.com/Enes-Somuncular/MacBattery-Releases/issues/new/choose)
+[Latest stable release](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/latest) · [FAQ (Türkçe)](docs/FAQ.md) · [Brand guide](docs/BRAND.md) · [Feedback](https://github.com/Enes-Somuncular/Wattelier-Releases/issues/new/choose)
 
 <sub>Wattelier · Power, clarified. · Enes Somuncular</sub>
+
 </div>
