@@ -10,13 +10,19 @@
 
 Mac’inin enerjisi nereye gidiyor? Şarjını, güç akışını ve uygulamalarının etkisini menü çubuğundan takip et.
 
-**[↓ En güncel kararlı Wattelier sürümünü indir](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/latest)** · [Sürüm notları](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.0) · [Tüm sürümler](https://github.com/Enes-Somuncular/Wattelier-Releases/releases)
+**[↓ Wattelier 1.6.1 DMG indir](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.1/Wattelier-1.6.1.dmg)** · [Sürüm notları](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.1) · [Tüm sürümler](https://github.com/Enes-Somuncular/Wattelier-Releases/releases)
 
 Apple Silicon · macOS 13+ · Türkçe arayüz · Açık ve koyu görünüm
 
 </div>
 
-## 1.6.0 ile daha anlaşılır enerji
+## Wattelier 1.6.1 · Şarj sınırına kolay erişim
+
+**Koruma → Şarj sınırı ayarlarını aç** düğmesi artık macOS Pil ayarlarına götürür. Şarj bilgi penceresi kendiliğinden açılmazsa Pil bölümündeki Şarj satırında **ⓘ** düğmesine bas. Apple Kestirmeler kurulumu gerekmiyor; şarj sınırını macOS yönetiyor. Wattelier sınırı okumaz veya değiştirmez.
+
+1.6.0'ın güç analizi, bildirimler ve yerel geçmiş özellikleri korunur.
+
+## 1.6.0 ile gelen enerji analizi
 
 **Genel bakış → Analiz → Koruma.** Üç sade bölüm; bir bakışta durum, ihtiyaç duyduğunda ayrıntı.
 
@@ -39,7 +45,7 @@ Kart geçişleri, kayan sekme seçimi ve kısa etkileşim animasyonları arayüz
 | **Genel bakış** | Pil yüzdesi, şarj durumu, kalan süre tahmini, güç dağılımı, sağlık ve şarj döngüsü. |
 | **Analiz · Anlık** | Çalışan uygulamaların CPU, RAM ve tahmini Watt kullanımı; arama, sıralama ve son 30/60 saniyenin güç grafiği. |
 | **Analiz · Geçmiş** | Ortak **Bugün / Son 7 gün** filtresi, pille kullanım özeti, tahmini uygulama enerjisi (Wh), uygulama karşılaştırmaları ve ayrıntılı pil günlüğü. |
-| **Koruma** | Şarj hedefi ve düşük pil hatırlatmaları; desteklenen sistemlerde, düğmeye bastığında çalışan Apple Kestirmesiyle şarj sınırı seçimi. |
+| **Koruma** | Şarj hedefi ve düşük pil hatırlatmaları; desteklenen sistemlerde, macOS Pil ayarlarına tek tuşla erişim; Kestirmeler gerektirmez. |
 
 ### Gerektiğinde bildirim, tekrar eden uyarılar olmadan
 
@@ -51,9 +57,9 @@ Tam dolum uyarısı macOS’un gerçek tam dolum durumunu bekler. Uygulama zaten
 2. Wattelier’i **Applications / Uygulamalar** klasörüne sürükle.
 3. Uygulamayı bu klasörden aç; menü çubuğundaki pil simgesine tıkla.
 
-**Zaten kullanıyorsan:** Uygulamadan **Güncellemeleri Denetle** seçeneğini kullan. Beta 3 kullanıcılarına da 1.6.0 kararlı güncellemesi sunulur. Güncelleme kanalını **Ayarlar → Güncellemeler → Kararlı** olarak seçebilirsin.
+**Zaten kullanıyorsan:** Uygulamadan **Güncellemeleri Denetle** seçeneğini kullan. 1.6.0 kullanıcılarına 1.6.1 kararlı güncellemesi sunulur. Güncelleme kanalını **Ayarlar → Güncellemeler → Kararlı** olarak seçebilirsin.
 
-[ZIP paketi](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/Wattelier-1.6.0.zip) · [SHA256 doğrulama dosyası](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/SHA256SUMS) · [Kurulum rehberi](docs/INSTALL.md) · [Sorun bildir](https://github.com/Enes-Somuncular/Wattelier-Releases/issues/new/choose)
+[ZIP paketi](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.1/Wattelier-1.6.1.zip) · [SHA256 doğrulama dosyası](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.1/SHA256SUMS) · [Kurulum rehberi](docs/INSTALL.md) · [Sorun bildir](https://github.com/Enes-Somuncular/Wattelier-Releases/issues/new/choose)
 
 **Gereksinimler:** Apple Silicon MacBook, macOS 13 veya üzeri. Intel sürümü yoktur. Uygulama ad-hoc imzalıdır; Apple Developer ID / notarization henüz yoktur. İlk açılışta macOS onayı gerekebilir; ayrıntılar kurulum rehberindedir.
 
@@ -63,11 +69,11 @@ Tam dolum uyarısı macOS’un gerçek tam dolum durumunu bekler. Uygulama zaten
 - Uygulama geçmişi varsayılan olarak **kapalıdır**. Kaydı açabilir, duraklatabilir veya geçmişi silebilirsin.
 - Pil ölçümleri ve açık uygulama listesi sunucuya gönderilmez. Güncelleme denetimleri ve indirmeler GitHub üzerinden yapılır.
 - Watt ve Wh değerleri **tahminidir**. Uygulama enerjisi CPU payıyla modellenir; GPU, ekran ve bütün arka plan yükleri uygulamalara kesin olarak dağıtılamaz. Eksik ölçümler ve uyku süreleri kaydedilmiş kullanım gibi sayılmaz.
-- Şarj hatırlatma hedefi gerçek şarj sınırı değildir. Apple Kestirmesi yalnızca sen başlattığında çalışır; uygulama mevcut sistem şarj sınırını okumaz.
+- Şarj hatırlatma hedefi gerçek şarj sınırı değildir. Wattelier yalnızca macOS Pil ayarlarını açar; mevcut sistem şarj sınırını okumaz veya değiştirmez.
 
 ## Beta kanalı ve eski kurulumlar
 
-Yeni deneme sürümlerini almak için **Ayarlar → Güncellemeler → Beta** kanalını seç. 1.6.0, onaylanan Beta 3 kodunun kararlı kimlikle yeniden derlenmiş sürümüdür; önceki betalar [sürüm arşivinde](https://github.com/Enes-Somuncular/Wattelier-Releases/releases) kalır. Beta kanalını kapatmak otomatik sürüm düşürmez.
+Yeni deneme sürümlerini almak için **Ayarlar → Güncellemeler → Beta** kanalını seç. 1.6.1, kararlı 1.6.0 sürümünün üzerine gelen küçük bir düzeltmedir; önceki betalar [sürüm arşivinde](https://github.com/Enes-Somuncular/Wattelier-Releases/releases) kalır. Beta kanalını kapatmak otomatik sürüm düşürmez.
 
 Görünen ürün adı **Wattelier**’dir. Eski MacBattery kurulumlarının tercihlerini, geçmişini ve Sparkle güncellemelerini korumak için iç paket yolu **MacBattery.app** ve uygulama kimliği korunur. Yeni indirmeler **Wattelier-VERSION.dmg / .zip** adını taşır; eski indirmeler erişilebilir kalır.
 
