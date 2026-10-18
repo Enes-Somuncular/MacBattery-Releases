@@ -4,7 +4,7 @@
 
 ## 1. Doğru dosyayı indirin
 
-[En güncel kararlı yayını açın](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) ve **Assets** altından `Wattelier-….dmg` dosyasını seçin. Daha eski kararlı sürümlerin paket adı `MacBattery-….dmg` olabilir.
+[En güncel kararlı yayını açın](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/latest) ve **Assets** altından `Wattelier-….dmg` dosyasını seçin. Daha eski kararlı sürümlerin paket adı `MacBattery-….dmg` olabilir.
 
 “Source code (zip/tar.gz)” Wattelier uygulaması değildir. GitHub bu dosyaları yayın deposunun içeriğinden otomatik oluşturur.
 
@@ -32,7 +32,7 @@ Her yayında ZIP ve DMG için `SHA256SUMS` bulunur. İndirilen dosyanın SHA-256
 
 ## English
 
-Requires an Apple Silicon MacBook and macOS 13 or later. Download the DMG from the [latest stable release](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest), open it, drag the included MacBattery.app (display name Wattelier) to Applications, and launch the copy in Applications. The app lives in the menu bar, not the Dock.
+Requires an Apple Silicon MacBook and macOS 13 or later. Download the DMG from the [latest stable release](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/latest), open it, drag the included MacBattery.app (display name Wattelier) to Applications, and launch the copy in Applications. The app lives in the menu bar, not the Dock.
 
 Current builds are ad-hoc signed and are not yet Developer ID signed or notarized. macOS may block the first launch. Confirm that you downloaded the app from this official distribution repository and follow [Apple’s safe-opening guidance](https://support.apple.com/en-us/102445). Do not disable system security globally.
 
