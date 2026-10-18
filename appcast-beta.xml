@@ -4,28 +4,47 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>Wattelier 1.6.0-beta.3</title>
-            <pubDate>Sun, 18 Oct 2026 21:11:48 +0300</pubDate>
+            <title>Wattelier 1.6.0</title>
+            <pubDate>Sun, 18 Oct 2026 21:29:51 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.6.0-beta.3</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.6.0b3</sparkle:version>
-            <sparkle:shortVersionString>1.6.0-beta.3</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.6.0</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.6.0</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## Wattelier 1.6.0 Beta 3 — Akıcı arayüz, sessiz tam dolum
+            <description sparkle:format="markdown">## Wattelier 1.6.0 — Enerji, daha anlaşılır
 
-- Sekmeler arasında kayan seçim göstergesi, yumuşak ekran/kart geçişleri, fare ve basma geri bildirimi.
-- Pil göstergesi, desteklenen macOS sürümlerinde sayısal değerler, uygulama güç çubukları, ayrıntılar ve yenileme düğmesinde kısa animasyonlar.
-- Hareketi Azalt tercihinde animasyonlar azaltılır; dekoratif döngüler veya arka plan zamanlayıcıları eklenmez.
-- Tam dolum bildirimi macOS’un gerçek tam dolum durumunu bekler. Zaten tam doluyken açılış sessizdir; uyarı engeli yeniden başlatma ve tercih değişikliklerinde korunur. Yeni tam dolum için önce %95 veya altına gerçek düşüş gerekir.
-- Önceki sürümlerin tam dolum bildirim geçmişi korunur; hedef/düşük pil uyarıları ve gönderim hatası bekleme süresi devam eder.
-- Bildirim altyapısı başlatılmadan önce uygulamanın macOS ikon kaydı yenilenir ve paketteki Wattelier ikonu yüklenir.
-- Koruma ekranına isteğe bağlı “Test bildirimi gönder” düğmesi eklendi.
+Kullanıcının Mac üzerinde deneyip onayladığı **1.6.0 Beta 3 kodu**, kararlı sürüm kimliğiyle yeniden derlendi ve paketlendi. Beta arşivleri değiştirilmedi.
+
+### Birleşik Analiz
+
+- Genel bakış, Analiz ve Koruma ile sade gezinme.
+- Anlık görünümde çalışan uygulamalar, CPU/RAM, tahmini Watt ve canlı güç grafiği.
+- Geçmiş görünümünde pil ve uygulama enerjisi için ortak Bugün / Son 7 gün filtresi, karşılaştırmalar ve yerel kayıt kontrolleri.
+
+### Canlı güç akışı ve akıcı arayüz
+
+- Adaptörden Mac’e kehribar, şarj olan pile turkuaz elektrik hattı. Pil dolu veya şarj beklemedeyken pil kolu sönük kalır.
+- Pille çalışırken tek hat; ölçülemeyen şarj gücü için “—”. Adaptör kapasitesi ve tahmini anlık giriş ayrı gösterilir.
+- Dairesel pil göstergesi, kayan sekme seçimi, kart geçişleri, basma/fare geri bildirimi ve desteklenen macOS sürümlerinde sayısal animasyonlar.
+- Hareketi Azalt desteği; açılır pencere kapalıyken elektrik akışı animasyonu durur.
+
+### Daha sakin bildirimler
+
+- Tam dolum uyarısı macOS’un gerçek tam dolum durumunu bekler. Zaten tam doluyken açılış sessizdir.
+- Tekrar engeli yeniden açılış ve tercih değişikliklerinde korunur; yeniden uyarı için pilin önce %95 veya altına düşmesi gerekir.
+- Uygulamanın macOS ikon kaydı bildirim altyapısından önce yenilenir. Koruma ekranında isteğe bağlı test bildirimi bulunur.
+
+### Uyumluluk ve gizlilik
+
+Görünür marka **Wattelier**. Eski kurulumlarla yerinde güncelleme için iç paket adı `MacBattery.app`, `com.enes.MacBattery` kimliği, yerel kayıt yolları ve Ed25519 anahtarı korunur. Pil ve uygulama geçmişi bu Mac’te tutulur; uygulama geçmişi varsayılan kapalıdır. Watt/Wh değerleri tahminidir.
+
+Apple Silicon ve macOS 13+ gerekir. Şarj sınırı, desteklenen sistemlerde kullanıcının başlattığı Apple Kestirmesiyle uygulanır; uygulama mevcut sistem sınırını okumaz.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.6.0-beta.3/Wattelier-1.6.0-beta.3.zip" length="3216556" type="application/octet-stream" sparkle:edSignature="dFhdMUkDSg35mJzTT5CVaPKL5Zc+4Qmn7PerUTTN38LreC/7RUNrawQF0Suqfe4EJ2v2DuszRBniji+7Vao7AQ=="></enclosure>
-        <sparkle:channel>beta</sparkle:channel></item>
+            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.6.0/Wattelier-1.6.0.zip" length="3216549" type="application/octet-stream" sparkle:edSignature="4ZXWw2FkCGr3Qx4RD3tiYeRGMkIqptYcoN/EMJ+rGNdQmgIszplE1P5xa7WZ111hZ+xj2MUQwDArb+a1SfzHBA=="></enclosure>
+        </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: r6OtXmJhAHJ8DsYoorUzHoMpMga0qIQsPoJtInmsJkbDd2cq5/I7AlexsbrhGs1uBDARY0YtWFlhpdzSLLZPAw==
-length: 2604
+edSignature: m5Edf8dNhGH6GoZMJ5FcvySf6vmK7oOqQeHKUxpC0mjU2+qb5JYif061/qkInMzjdWxQ9iAG1n2iavvtXJzvCA==
+length: 3515
 -->
