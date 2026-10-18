@@ -18,14 +18,14 @@ Understand your Mac's power flow, battery health and app activity at a glance.
 
 ## ⬇️ Download for Mac
 
-> **Meet Wattelier.** During the brand transition, the app and DMG files retain the technical **MacBattery** name, so existing installations keep working.
+> **Meet Wattelier.** The new beta ships as **Wattelier**. The internal **MacBattery.app** bundle name remains for compatibility with existing installs; stable 1.4.1 keeps its original package name.
 
 <!-- DOWNLOADS:START -->
-| **✦ Stable · 1.4.1** | **◇ Beta · 1.4.1-beta.2** |
+| **✦ Stable · 1.4.1** | **◇ Beta · 1.5.0-beta.2** |
 | :---: | :---: |
 | Recommended for everyday use | Early access and testing |
-| **[↓ Download stable DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg)** | **[↓ Download beta DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/MacBattery-1.4.1-beta.2.dmg)** |
-| [Release notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/SHA256SUMS) | [Beta notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/SHA256SUMS) |
+| **[↓ Download stable DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg)** | **[↓ Download beta DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/Wattelier-1.5.0-beta.2.dmg)** |
+| [Release notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/SHA256SUMS) | [Beta notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/SHA256SUMS) |
 <!-- DOWNLOADS:END -->
 
 [Browse all releases →](https://github.com/Enes-Somuncular/MacBattery-Releases/releases)
@@ -52,7 +52,7 @@ Understand your Mac's power flow, battery health and app activity at a glance.
 | :---: | :---: |
 | <img src="assets/screenshots/overview-dark.png" width="370" alt="Dark overview panel with battery and power flow" /> | <img src="assets/screenshots/applications.png" width="370" alt="App activity view" /> |
 
-<sub>Images show the previous stable 1.3.0 UI with sample data; details may differ in 1.4.1.</sub>
+<sub>Images show the previous stable 1.3.0 UI with sample data; details may differ in Wattelier 1.5.0-beta.2.</sub>
 
 ## 📦 Install in three steps
 
