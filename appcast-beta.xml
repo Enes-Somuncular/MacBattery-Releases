@@ -4,30 +4,30 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>MacBattery 1.3.0-beta.2</title>
-            <pubDate>Sun, 18 Oct 2026 16:29:21 +0300</pubDate>
+            <title>MacBattery 1.3.0</title>
+            <pubDate>Sun, 18 Oct 2026 16:38:59 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.3.0-beta.2</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.3.0b2</sparkle:version>
-            <sparkle:shortVersionString>1.3.0-beta.2</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.3.0</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.3.0</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## MacBattery 1.3.0 Beta 2
+            <description sparkle:format="markdown">## MacBattery 1.3.0
 
-- Koruma sekmesinden Apple’ın yerleşik şarj sınırını değiştirme: “Şarj sınırını seç…” düğmesi Apple’ın %80, %85, %90, %95 ve %100 seçim penceresini açar.
-- İlk kullanımda “Kestirmeyi ekle…” ile hazır kestirmeyi bir kez ekleyin, sonra MacBattery’ye dönüp “Yeniden denetle”ye basın. Yalnızca Apple’ın Pil Şarj Sınırını Ayarla eylemini içerir.
-- Apple Silicon ve macOS 26.4 veya üzeri gerekir. Diğer sistemlerde Pil ayarlarına yönlendirme korunur.
-- İşlem yalnızca düğmeye bastığınızda çalışır. Seçtiğiniz tercih macOS tarafından yönetilir; uygulamayı kapatmak veya beta kanalından çıkmak tercihi geri almaz. Değiştirmek için yine sınır seçebilir veya macOS Pil ayarlarını kullanabilirsiniz.
-- Kestirme eksikse, ad çakışması varsa, iptal edilirse veya zaman aşımı yaşanırsa durum açıkça gösterilir. Sistem sınırı uygulama tarafından okunmadığından ölçülmüş bir yüzde veya doğrulanmamış “uygulandı” mesajı gösterilmez.
+Beta 2’de denenen pil koruma özellikleri artık kararlı sürümde.
 
-Bildirim hedefleri ayrı hatırlatmalardır. Bu sürüm watt sınırı, zorla deşarj, özel donanım komutları veya yetkili yardımcı servis kullanmaz. Apple ölçüm doğruluğu için zaman zaman %100’e şarj edebilir.
+- Koruma sekmesinden Apple’ın yerleşik şarj sınırını seçme: %80, %85, %90, %95 veya %100. Apple Silicon ve macOS 26.4 veya üzeri gerekir.
+- İlk kullanımda hazır kestirmeyi ekleyip yeniden denetleyin. Mevcut beta kullanıcılarının aynı kestirmeyi yeniden eklemesi gerekmez.
+- İsteğe bağlı hedef, tam dolum, düşük pil ve kritik pil bildirimleri; sessize alma ve tekrar engelleme.
+- İsteğe bağlı oturum açılışında başlatma.
+- Ayarlardan açılıp kapatılabilen beta güncelleme kanalı.
 
-Bu bir beta deneme sürümüdür; kararlı kanal 1.2.0 olarak kalır.
+Bildirim hedefi sistem şarj sınırından ayrıdır. Şarj sınırı yalnızca kullanıcı Apple’ın seçim penceresinde tercih yaptığında değiştirilir. Watt sınırı, zorla deşarj veya özel donanım komutu kullanılmaz. Seçilen sınır macOS tarafından yönetilir ve uygulama kapatıldığında geri alınmaz. Mevcut sınır uygulama tarafından okunmaz.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.3.0-beta.2/MacBattery-1.3.0-beta.2.zip" length="1475695" type="application/octet-stream" sparkle:edSignature="cAPbd+9nEPRlsuMEceAGb7ZSIn76G1P2zdUcDsmN26TZ+xJyUmB8GLc9uQuYIZgikYh5TZUy3eDcYQUu4mkZBA=="></enclosure>
-        <sparkle:channel>beta</sparkle:channel></item>
+            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.3.0/MacBattery-1.3.0.zip" length="1475685" type="application/octet-stream" sparkle:edSignature="Rkjq3p1WAyeal+luJbGBYrT40jn8aX74oo7VfmjDdPH5uHhGWOCbAmVED4/SJLm0ijq3tZTcf1WDxwLoAO4dCQ=="></enclosure>
+        </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 15bvRT3i+fIYcRA8/fNcB2uyJS90qlzTFXNqc2KF+16ZBJ50fE7PmiJbtpD1w01HNbZfChJ8DEa90x4QArHOCQ==
-length: 2920
+edSignature: 5fXzq72NtGoFMi/O2cp5g2A7Mm9neizy4yWxArIiruP4o1yVZ65t8W2Yyip+RGlnV1Z0CldEiigNy3Y06eNHAw==
+length: 2460
 -->
