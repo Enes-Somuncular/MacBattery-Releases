@@ -38,7 +38,7 @@ Yüksek kontrast ve erişilebilirlik önceliklidir. Renkler ölçüm kategoriler
 ## İsimlendirme ve geçiş notları
 
 - Marka / web adı **Wattelier**.
-- Teknik repo, uygulama paketi, kurulum dosyaları, `CFBundleIdentifier`, güncelleme URL'leri ve mevcut kullanıcıların kurulu sürümü **MacBattery** olarak kalır. Bu aşama yalnızca web / tanıtım kimliğidir.
+- macOS uygulamasının görünen adı, Finder simgesi, yeni DMG/ZIP paketleri ve yayın başlıkları **Wattelier** olarak güncellendi. Geriye dönük Sparkle ve veri uyumluluğu için iç `MacBattery.app` adı, `com.enes.MacBattery` kimliği, yerel veri yolları ve yayın deposunun URL'si değişmedi.
 - İleride uygulama adı değiştirilecekse güncelleme kanalları, release asset isimleri, bundle yolu ve mevcut kurulumların geçiş planı birlikte ele alınmalıdır; ayrı bir sürüm çalışması gerekir.
 - İsim için hızlı web taraması yapıldı; **marka tescili, alan adı ve App Store isim uygunluğu hukuki olarak doğrulanmış değildir.**
 
@@ -54,4 +54,4 @@ Yüksek kontrast ve erişilebilirlik önceliklidir. Renkler ölçüm kategoriler
 
 ## Yayın deposu
 
-Bu depoda [kararlı sürümler](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) ve [beta sürümleri](https://github.com/Enes-Somuncular/MacBattery-Releases/releases) bulunur. İndirilebilir kararlı paket: `v1.4.1`; beta: `v1.4.1-beta.2` (18 Ekim 2026 itibarıyla). `appcast-beta.xml` imzalı güncelleme akışıdır ve markalama amacıyla değiştirilmemelidir.
+Bu depoda [kararlı sürümler](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) ve [beta sürümleri](https://github.com/Enes-Somuncular/MacBattery-Releases/releases) bulunur. GitHub'daki [releases/latest](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) bağlantısı her zaman yayımlanmış son kararlı sürümü gösterir. İlk Wattelier test yayını `v1.5.0-beta.2` olarak yayımlandı. `appcast-beta.xml` imzalı güncelleme akışıdır ve markalama amacıyla değiştirilmemelidir.

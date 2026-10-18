@@ -20,16 +20,16 @@ Mac'in güç akışını, pil sağlığını ve uygulama etkinliğini tek bakı�
 
 ## ⬇️ Mac için indir
 
-> **Yeni marka: Wattelier.** Yeni beta sürümü **Wattelier** adıyla yayımlanır. Eski kurulumların güncelleme uyumluluğu için iç paket adı **MacBattery.app** olarak korunur; kararlı 1.4.1 sürümü de eski paket adını kullanır.
+> **Wattelier** artık uygulamanın görünen adıdır. Yeni paketler Wattelier adıyla dağıtılır; eski kurulumların veri ve Sparkle güncelleme uyumluluğu için iç uygulama paketinin adı **MacBattery.app** kalır. Kararlı sürüm için daima GitHub'ın [son kararlı yayınını](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) kullan.
 
 <!-- DOWNLOADS:START -->
 <div align="center">
 
-| **✦ Kararlı sürüm · 1.4.1** | **◇ Beta sürümü · 1.5.0-beta.2** |
+| **✦ Son kararlı sürüm** | **◇ Son deneme sürümü · 1.5.0-beta.2** |
 | :---: | :---: |
 | Günlük kullanım için önerilen sürüm | Yeni özellikler ve erken testler |
-| **[↓ Mac için kararlı sürümü indir](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg)** | **[↓ Beta sürümünü indir](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/Wattelier-1.5.0-beta.2.dmg)** |
-| [Sürüm notları](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/SHA256SUMS) | [Beta notları](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/SHA256SUMS) |
+| **[↓ En güncel kararlı sürümü görüntüle](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest)** | **[↓ Son beta DMG'sini indir](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/Wattelier-1.5.0-beta.2.dmg)** |
+| [Güncel sürüm notları, DMG ve doğrulama dosyaları](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) | [Beta notları](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/SHA256SUMS) |
 
 </div>
 <!-- DOWNLOADS:END -->
@@ -59,11 +59,11 @@ Mac'in güç akışını, pil sağlığını ve uygulama etkinliğini tek bakı�
 | :---: | :---: |
 | <img src="assets/screenshots/overview-dark.png" width="370" alt="MacBattery koyu görünümlü pil ve güç akışı paneli" /> | <img src="assets/screenshots/applications.png" width="370" alt="MacBattery uygulama etkinliği paneli" /> |
 
-<sub>Görseller önceki kararlı 1.3.0 arayüzünden, temsili verilerle hazırlanmıştır. Yeni Wattelier 1.5.0-beta.2 sürümünün arayüzü farklılaşabilir.</sub>
+<sub>Görseller önceki 1.3.0 arayüzünden, temsili verilerle hazırlanmıştır. Wattelier 1.5 serisindeki arayüz ve ikon yenilenmiştir.</sub>
 
 ## 📦 Üç adımda kurulum
 
-1. Yukarıdaki **kararlı sürümün DMG** dosyasını indir ve aç.
+1. [Son kararlı sürümü aç](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest), **Assets** bölümündeki DMG dosyasını indir ve aç.
 2. **MacBattery.app** uygulamasını **Applications / Uygulamalar** klasörüne sürükle.
 3. Uygulamayı Applications içinden aç; menü çubuğundaki pil simgesine tıkla.
 
@@ -71,7 +71,7 @@ Mac'in güç akışını, pil sağlığını ve uygulama etkinliğini tek bakı�
 
 ## ◇ Beta kanalı
 
-Yeni özellikleri önce denemek için **Ayarlar → Güncellemeler → Beta güncellemelerini al** seçeneğini aç. Bu seçeneği kapatmak, yüklü sürümü otomatik olarak eski bir kararlı sürüme düşürmez.
+Yeni özellikleri önce denemek için **Ayarlar → Güncellemeler → Beta** kanalını seçebilirsin. Son deneme sürümü, yeni kararlı sürüm çıktığında ondan eski kalabilir; beta kanalı imzalı akış üzerinden uygun en yeni güncellemeyi sunar. Beta seçimini kapatmak yüklü sürümü otomatik olarak düşürmez.
 
 <details><summary><strong>Beta önizlemelerini göster</strong></summary>
 

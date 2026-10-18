@@ -18,14 +18,14 @@ Understand your Mac's power flow, battery health and app activity at a glance.
 
 ## ⬇️ Download for Mac
 
-> **Meet Wattelier.** The new beta ships as **Wattelier**. The internal **MacBattery.app** bundle name remains for compatibility with existing installs; stable 1.4.1 keeps its original package name.
+> **Wattelier** is the public product name. New release archives use Wattelier; the inner **MacBattery.app** package name remains for compatibility with prior installations, preferences and Sparkle updates. The latest stable release is always available on [GitHub Releases/latest](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest).
 
 <!-- DOWNLOADS:START -->
-| **✦ Stable · 1.4.1** | **◇ Beta · 1.5.0-beta.2** |
+| **✦ Latest stable** | **◇ Most recent preview · 1.5.0-beta.2** |
 | :---: | :---: |
 | Recommended for everyday use | Early access and testing |
-| **[↓ Download stable DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.dmg)** | **[↓ Download beta DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/Wattelier-1.5.0-beta.2.dmg)** |
-| [Release notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/SHA256SUMS) | [Beta notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/SHA256SUMS) |
+| **[↓ View latest stable download](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest)** | **[↓ Download latest beta DMG](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/Wattelier-1.5.0-beta.2.dmg)** |
+| [Stable notes, DMG & checksums](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) | [Beta notes](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.2) · [SHA256](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/SHA256SUMS) |
 <!-- DOWNLOADS:END -->
 
 [Browse all releases →](https://github.com/Enes-Somuncular/MacBattery-Releases/releases)
@@ -52,11 +52,11 @@ Understand your Mac's power flow, battery health and app activity at a glance.
 | :---: | :---: |
 | <img src="assets/screenshots/overview-dark.png" width="370" alt="Dark overview panel with battery and power flow" /> | <img src="assets/screenshots/applications.png" width="370" alt="App activity view" /> |
 
-<sub>Images show the previous stable 1.3.0 UI with sample data; details may differ in Wattelier 1.5.0-beta.2.</sub>
+<sub>Images show the previous 1.3.0 UI with sample data; the Wattelier 1.5 series has an updated visual identity.</sub>
 
 ## 📦 Install in three steps
 
-1. Download the **stable DMG** above and open it.
+1. Open the [latest stable release](https://github.com/Enes-Somuncular/MacBattery-Releases/releases/latest) and download the DMG listed under **Assets**.
 2. Drag **MacBattery.app** into **Applications**.
 3. Launch the installed app from Applications and open it from the menu bar.
 
@@ -64,7 +64,7 @@ Understand your Mac's power flow, battery health and app activity at a glance.
 
 ## ◇ Beta channel
 
-Enable **Ayarlar → Güncellemeler → Beta güncellemelerini al** in the Turkish app interface to opt into beta updates. Disabling beta updates does not automatically downgrade an installed beta.
+Enable **Ayarlar → Güncellemeler → Beta güncellemelerini al** in the Turkish app interface to opt into beta updates. Disabling beta updates does not automatically downgrade an installed beta. A previous beta may be older than the newest stable; the signed update feed determines the available version.
 
 <details><summary><strong>See the beta previews</strong></summary>
 

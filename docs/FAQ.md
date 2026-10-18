@@ -20,7 +20,7 @@ Bildirim hedefi yalnızca hatırlatmadır. Ayrı şarj sınırı düğmesi, dest
 
 ### Uygulamayı kapatırsam seçtiğim şarj sınırı kalkar mı?
 
-Hayır. Seçim macOS’a ait bir tercihtir. Apple’ın Pil ayarlarından veya aynı kestirmeden değiştirebilirsiniz. MacBattery bildirimleri ise uygulama açıkken çalışır.
+Hayır. Seçim macOS’a ait bir tercihtir. Apple’ın Pil ayarlarından veya aynı kestirmeden değiştirebilirsiniz. Wattelier bildirimleri ise uygulama açıkken çalışır.
 
 ### Watt ve uygulama tüketimleri kesin ölçüm mü?
 
@@ -28,7 +28,7 @@ Güç dağılımı ve uygulama enerji değerleri tahmin içerebilir. Bunlar priz
 
 ### Beta ile kararlı sürüm arasındaki fark nedir?
 
-Kararlı sürüm genel kullanım içindir. Yeni özellikler önce beta kanalına gelir. Ayarlardan beta’ya katılabilirsiniz; kapatmak yüklü sürümü otomatik olarak düşürmez. Ana sayfadaki birincil düğme her zaman kararlı DMG’ye yönelir.
+Kararlı sürüm genel kullanım içindir. Yeni özellikler önce beta kanalına gelir. Ayarlardan beta’ya katılabilirsiniz; kapatmak yüklü sürümü otomatik olarak düşürmez. Ana sayfadaki birincil düğme en son kararlı sürüme yönelir; DMG indirmesi yayımlanan paketin Assets bölümündedir.
 
 ### Pil günlüğü nerede?
 
@@ -36,7 +36,7 @@ Kararlı sürüm genel kullanım içindir. Yeni özellikler önce beta kanalına
 
 ### Verilerim yükleniyor mu?
 
-MacBattery pil ölçümlerini veya uygulama listesini sunucuya göndermez. Güncellemeler GitHub’dan denetlenir ve indirilir. Beta pil günlüğü yerel dosyada saklanır.
+Wattelier pil ölçümlerini veya uygulama listesini sunucuya göndermez. Güncellemeler GitHub’dan denetlenir ve indirilir. Beta pil günlüğü yerel dosyada saklanır.
 
 ### Uygulama neden açılmıyor?
 
