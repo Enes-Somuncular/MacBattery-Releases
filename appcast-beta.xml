@@ -4,28 +4,37 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>MacBattery 1.4.1-beta.2</title>
-            <pubDate>Sun, 18 Oct 2026 18:37:21 +0300</pubDate>
+            <title>MacBattery 1.4.1</title>
+            <pubDate>Sun, 18 Oct 2026 18:45:03 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1-beta.2</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.4.1b2</sparkle:version>
-            <sparkle:shortVersionString>1.4.1-beta.2</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.4.1</sparkle:version>
+            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## MacBattery 1.4.1 Beta 2
+            <description sparkle:format="markdown">## MacBattery 1.4.1 — Kararlı Sürüm
 
-- macOS'un IOPowerSources üzerinden sağladığı “Is Finishing Charge” durumunu okuyarak %100'de **Şarj tamamlanıyor** gösterilir.
-- Yüzde %100 tek başına **Tam dolu** kabul edilmez. Tam dolu, macOS'un bildirdiği charged/fully charged bayraklarına dayanır.
-- Şarj tamamlanırken kalan süre uydurulmaz; bitiş saati gizlenir.
-- Ana kart, süre kartı ve menü çubuğu pil simgesinin erişilebilirlik açıklaması aynı durum modelini kullanır.
-- 1.4.1 Beta 1'deki Watt ve süre doğruluğu iyileştirmeleri korunur.
+1.4.1 Beta 2'nin kodu, kararlı sürüm kimliğiyle yeniden derlenerek yayımlanır.
 
-Bu sürüm yalnızca pil durumunu okur; şarj limitini veya güç ayarlarını değiştirmez. Kararlı kanal 1.4.0 olarak kalır.
+- **macOS ile uyumlu şarj durumu:** Apple'ın IOPowerSources şarj bayrakları esas alınır. %100 yalnızca gösterilen kapasitedir; tek başına "Tam dolu" kararı vermez.
+- **Son aşama ayrı gösterilir:** macOS `Is Finishing Charge` bildiriyorsa **Şarj tamamlanıyor**, `Is Charged` bildiriyorsa **Tam dolu** gösterilir.
+- **Şarj tahminleri:** Geçersiz/sentinel süreler (0, -1, 65535 vb.) kullanılmaz. macOS güvenilir tahmin sunmuyorsa süre uydurulmaz; son şarj aşamasında hatalı bitiş saati gizlenir.
+- **Güncel pil gücü:** Yeni pil şarj gücü ölçümü gelmediyse eski pozitif Watt değeri tekrar gösterilmez; ölçüm yoksa `—` kullanılır.
+- **Tutarlı arayüz:** Genel bakış, menü çubuğu ve erişilebilirlik açıklamaları aynı şarj durumunu yansıtır.
+- **Korunan özellikler:** Pil günlüğü, güç akışı, pil koruma, Apple Kestirmeler entegrasyonu, beta/stabil kanal tercihi ve yeni uygulama ikonu devam eder.
+
+### Doğrulama sınırları
+
+1.4.1 Beta 2, gerçek Mac'te derlenip imzalanmış ve yayımlanmıştır. Kullanıcının gerçek Mac'inden gelen `pmset -g batt` çıktısında `charged`, MacBattery ekranında **Tam dolu** olarak doğrulanmıştır. `finishing charge` durumunun Beta 2 üzerinde gerçek cihazda gösterimi henüz ayrıca doğrulanmamıştır; bu durum için regresyon testi mevcuttur.
+
+Güç akışındaki sistem/adaptör Watt değerleri tahmindir; elektrik sayacı ölçümü gibi değerlendirilmemelidir. Bu sürüm güç/firmware ayarlarını değiştirmez ve şarjı doğrudan yönetmez.
+
+macOS 13+ ve Apple Silicon gerektirir.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/MacBattery-1.4.1-beta.2.zip" length="2688197" type="application/octet-stream" sparkle:edSignature="bjHZgi7lY8wUdJj2hNHA+EiCPXQmMLJCzYg2zL2q9w+eKNd0CADX4ApXl2qi3SSfaa34RJLRE0AIEYoKXnVLBg=="></enclosure>
-        <sparkle:channel>beta</sparkle:channel></item>
+            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1/MacBattery-1.4.1.zip" length="2688188" type="application/octet-stream" sparkle:edSignature="kDrUR1+rez0YkgdmJj0A6KprKwlqocoV6U5kAdyT3MwjJ3tLAjot9R2HMkyfvrFjRYVY4NBpBtYIRPrdQ8utDA=="></enclosure>
+        </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: aNGrWBpK/dsucsFRCiPvnbYv1SVBeHO0Q8Hcu7KufaDEEbrb1ditcpmsaUZghe17lpnT3vzdv+6vRG6J/3pvAA==
-length: 2247
+edSignature: Vs16JV9pgs0Z144T/NoiYoc/82akoPX5uDzECu4UICzpIIipJPVY10ijeWe0zWtKReYtwtj2791zRxqMPooJCg==
+length: 3213
 -->
