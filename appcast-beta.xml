@@ -4,28 +4,28 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>MacBattery 1.4.1-beta.1</title>
-            <pubDate>Sun, 18 Oct 2026 18:21:13 +0300</pubDate>
+            <title>MacBattery 1.4.1-beta.2</title>
+            <pubDate>Sun, 18 Oct 2026 18:37:21 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1-beta.1</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.4.1b1</sparkle:version>
-            <sparkle:shortVersionString>1.4.1-beta.1</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.4.1-beta.2</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.4.1b2</sparkle:version>
+            <sparkle:shortVersionString>1.4.1-beta.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## MacBattery 1.4.1 Beta 1 — Şarj süresi ve güç göstergesi düzeltmeleri
+            <description sparkle:format="markdown">## MacBattery 1.4.1 Beta 2
 
-- Pil %100 olduğunda macOS `FullyCharged` bayrağı gecikse bile “Şarj tamamlandı” gösterilir; hatalı “Hesaplanıyor…” süresi ve geçmişten kalmış bitiş saati gizlenir.
-- %1–99 arası şarjda, macOS’un `AvgTimeToFull` tahmini tercih edilir. Geçerli değilse sistemin `TimeRemaining` değeri denenir. Her ikisi de geçersizse uydurma dakika yerine “Süre tahmini yok” gösterilir.
-- Kullanılamayan, sıfır veya hatalı IOKit süre değerleri (%100'de kalan süre dahil) filtrelenir.
-- Batarya şarj Watt değeri artık eski pozitif örnekten devralınmaz: güncel ölçüm sıfırsa sıfır, hiç yoksa “—” gösterilir.
-- Güç akışında hesaplanan değerler “Tahmini” olarak etiketlenir. Menü çubuğundaki %100 pil tamamlandı durumu da düzeltildi.
+- macOS'un IOPowerSources üzerinden sağladığı “Is Finishing Charge” durumunu okuyarak %100'de **Şarj tamamlanıyor** gösterilir.
+- Yüzde %100 tek başına **Tam dolu** kabul edilmez. Tam dolu, macOS'un bildirdiği charged/fully charged bayraklarına dayanır.
+- Şarj tamamlanırken kalan süre uydurulmaz; bitiş saati gizlenir.
+- Ana kart, süre kartı ve menü çubuğu pil simgesinin erişilebilirlik açıklaması aynı durum modelini kullanır.
+- 1.4.1 Beta 1'deki Watt ve süre doğruluğu iyileştirmeleri korunur.
 
-Bu sürüm yalnızca görünüm, telemetri yorumlama ve tahmin sunumunu düzenler. Şarj limitlerini, Apple Kestirmeler tercihlerini, güç/firmware durumunu ve kayıtlı pil günlüğünü değiştirmez. macOS 13+ ve Apple Silicon gerektirir. Beta test edilmeden kararlı 1.4.1 yayımlanmaz.
+Bu sürüm yalnızca pil durumunu okur; şarj limitini veya güç ayarlarını değiştirmez. Kararlı kanal 1.4.0 olarak kalır.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.1/MacBattery-1.4.1-beta.1.zip" length="2685216" type="application/octet-stream" sparkle:edSignature="GMNYKv63ZXkg3vvEDFovqwW8d5Rtiz8PsRhlPKDL6tp7R55JhgIPSWQuQv4WG6VXmqVN24xWW2M1BnHs4YICCA=="></enclosure>
+            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.4.1-beta.2/MacBattery-1.4.1-beta.2.zip" length="2688197" type="application/octet-stream" sparkle:edSignature="bjHZgi7lY8wUdJj2hNHA+EiCPXQmMLJCzYg2zL2q9w+eKNd0CADX4ApXl2qi3SSfaa34RJLRE0AIEYoKXnVLBg=="></enclosure>
         <sparkle:channel>beta</sparkle:channel></item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 4QsCh+vowB8PwGgwjcOaOZW5ynlooAyEp5PFC5B/vXVf4S1X4pQQoyF6SDA9Nf5+qDCFnzjtE3f9tVyKCtkTAg==
-length: 2723
+edSignature: aNGrWBpK/dsucsFRCiPvnbYv1SVBeHO0Q8Hcu7KufaDEEbrb1ditcpmsaUZghe17lpnT3vzdv+6vRG6J/3pvAA==
+length: 2247
 -->
