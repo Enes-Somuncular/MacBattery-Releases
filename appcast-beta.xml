@@ -4,41 +4,29 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>Wattelier 1.5.0</title>
-            <pubDate>Sun, 18 Oct 2026 20:15:35 +0300</pubDate>
+            <title>Wattelier 1.6.0-beta.1</title>
+            <pubDate>Sun, 18 Oct 2026 20:38:00 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.5.0</sparkle:version>
-            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.6.0-beta.1</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.6.0b1</sparkle:version>
+            <sparkle:shortVersionString>1.6.0-beta.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## Wattelier 1.5.0 — İlk Kararlı Marka Sürümü
+            <description sparkle:format="markdown">## Wattelier 1.6.0 Beta 1 — Birleşik enerji analizi
 
-Wattelier'in yeni marka kimliğiyle yayımlanan **1.5.0 kararlı sürümü**. Test edilen 1.5.0 Beta 2 özellikleri korunarak, yeni **kararlı** sürüm numarasıyla yeniden derlendi ve imzalandı.
+- Ana gezinme Genel bakış, Analiz ve Koruma olarak sadeleştirildi.
+- Uygulamalar ve Geçmiş, Analiz altında birleştirildi. Anlık görünümde uygulama tüketimi ve güç grafiği birlikte bulunur.
+- Geçmiş görünümünde Bugün / Son 7 gün seçimi hem pil hem uygulama kayıtlarını aynı tarih aralığında gösterir. Kayıt süreleri bağımsızdır.
+- Genel bakışta dairesel şarj göstergesi, sade durum başlığı ve Analiz kısayolu eklendi. Beta kimliği başlıkta görünür.
+- Mevcut yerel veriler, kayıt tercihleri, koruma ayarları, bundle kimliği ve Sparkle imzalama anahtarı korunur.
+- Uygulama geçmişi varsayılan olarak kapalı kalır. Uygulama Watt/Wh değerleri CPU payına dayalı tahminlerdir.
 
-### Yenilikler
-
-- **Wattelier kimliği:** Uygulama adı, Finder W monogramı, renk paleti ve *Power, clarified.* tasarım dili.
-- **Uygulama enerji geçmişi:** Anlık ve geçmiş görünümleri; bugün ve son 7 gün için yaklaşık Wh toplamları, uygulama karşılaştırmaları ve grafikler.
-- **Pil günlüğü ve güç akışı:** Mevcut yerel geçmiş, pil sağlığı, şarj süresi ve güç dağılımı özellikleri korunur.
-- **Pil koruması:** Bildirimler ve desteklenen macOS sürümlerindeki Apple Kestirmeler bağlantısı korunur.
-- **Güncellemeler:** Beta ve kararlı kanallar; Sparkle ile Ed25519 imzalı uygulama güncellemeleri.
-
-### Eski kurulumlardan geçiş
-
-- MacBattery 1.4.1 veya 1.5.0 beta kullanıcıları aynı `com.enes.MacBattery` kimliğiyle güncellenebilir.
-- Eski veriler ve tercihleri korumak için iç paket adı `MacBattery.app`, kayıt dizinleri ve imza anahtarı değiştirilmemiştir. Görünen uygulama adı **Wattelier**'dir.
-- Kararlı 1.5.0, 1.5.0-beta.2'den daha yeni bir Sparkle derleme numarası taşır; beta arşivinin adı değiştirilmemiş, uygulama kararlı olarak **yeniden derlenip imzalanmıştır**.
-- Beta kanalına açık kullanıcılar isterlerse **Ayarlar → Güncellemeler → Kararlı** seçimini yapabilir; kanal değiştirmek otomatik sürüm düşürme işlemi değildir.
-
-### Gereksinimler ve notlar
-
-Apple Silicon Mac, macOS 13+ gerekir. Intel derlemesi bulunmaz. Uygulama başına Watt/Wh değerleri **tahminidir**, bağımsız elektrik sayacı ölçümü değildir. Ad-hoc uygulama imzası Apple Developer ID / notarization yerine geçmez; ilk kurulumda macOS onayı gerekebilir.
+Apple Silicon ve macOS 27.0.1 üzerinde, eski MacBattery 1.4.0 kopyasından bu betanın gerçek Sparkle indirme, imza doğrulama, açma ve yerinde kurulum zinciri test edildi. Kurulan uygulamanın kimliği, imza anahtarı ve dosyalarının beta arşiviyle eşleştiği doğrulandı.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0/Wattelier-1.5.0.zip" length="3147044" type="application/octet-stream" sparkle:edSignature="Ay1h/zTdzmq0mpAxkUhWmoB1FCYslSvri1M3LOXqkLCl7K4jzHlwD916qKDwEA9E4gJn28+BZu7hD4GwYZupDQ=="></enclosure>
-        </item>
+            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.6.0-beta.1/Wattelier-1.6.0-beta.1.zip" length="3160452" type="application/octet-stream" sparkle:edSignature="v5Ph54MeXwwfP1xEECrmuQkn4Cqb7UtYW2fz0dqoRBR3ut4m3IDNfKzL0BKAh5rAdC1nxhmJkk0Jv0Or5m/WAA=="></enclosure>
+        <sparkle:channel>beta</sparkle:channel></item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 4RpV7TxwthxgpUAbUl47yfw2savnAxvjAuXKaOiTTlFgOuyISOXrocQJmM8I5FwWHPYsEV+nctzzV7RQaETPAA==
-length: 3381
+edSignature: zzPnbRFCfymk5K9MFwOYG1E3vdzOC7vgbKGv4Taw0hSnIoXRQvCWvHraxClOA3D7+4gzBEcCjAPVnyIj6BG9Bw==
+length: 2626
 -->
