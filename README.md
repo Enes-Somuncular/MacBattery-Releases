@@ -10,7 +10,7 @@
 
 Mac’inin enerjisi nereye gidiyor? Şarjını, güç akışını ve uygulamalarının etkisini menü çubuğundan takip et.
 
-**[↓ Wattelier 1.6.0’ı indir](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/Wattelier-1.6.0.dmg)** · [Sürüm notları](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.0) · [Tüm sürümler](https://github.com/Enes-Somuncular/Wattelier-Releases/releases)
+**[↓ En güncel kararlı Wattelier sürümünü indir](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/latest)** · [Sürüm notları](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/tag/v1.6.0) · [Tüm sürümler](https://github.com/Enes-Somuncular/Wattelier-Releases/releases)
 
 Apple Silicon · macOS 13+ · Türkçe arayüz · Açık ve koyu görünüm
 
@@ -47,7 +47,7 @@ Tam dolum uyarısı macOS’un gerçek tam dolum durumunu bekler. Uygulama zaten
 
 ## İndir ve kur
 
-1. **[Wattelier 1.6.0 DMG](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/download/v1.6.0/Wattelier-1.6.0.dmg)** dosyasını indir ve aç.
+1. **[En güncel kararlı yayın](https://github.com/Enes-Somuncular/Wattelier-Releases/releases/latest)** sayfasındaki *Assets* bölümünden DMG'yi indir ve aç.
 2. Wattelier’i **Applications / Uygulamalar** klasörüne sürükle.
 3. Uygulamayı bu klasörden aç; menü çubuğundaki pil simgesine tıkla.
 
