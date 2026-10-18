@@ -1,0 +1,38 @@
+name: Hata bildir / Bug report
+description: MacBattery ile yaşadığınız bir sorunu bildirin.
+title: "[Hata]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Teşekkürler. Bu kayıt herkese açıktır; parola, özel dosya veya kişisel bilgi paylaşmayın."
+  - type: input
+    id: app-version
+    attributes:
+      label: MacBattery sürümü / Version
+      placeholder: "Örn. 1.3.0 veya 1.4.0-beta.2"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS sürümü
+      placeholder: "Örn. macOS 27.0.1"
+    validations:
+      required: true
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac modeli ve işlemci
+      placeholder: "Örn. MacBook Air M2"
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Sorun ve tekrarlama adımları / Steps to reproduce
+      description: Ne yaptınız, ne olmasını beklediniz ve ne oldu?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Ekran görüntüsü / Screenshot
+      description: İsteğe bağlı. Paylaşmadan önce kişisel bilgileri gizleyin.

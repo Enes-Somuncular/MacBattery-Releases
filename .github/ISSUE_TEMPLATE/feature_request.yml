@@ -1,0 +1,16 @@
+name: Özellik öner / Feature request
+description: MacBattery için bir iyileştirme önerin.
+title: "[Öneri]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Hangi ihtiyacı çözmek istiyorsunuz?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Önerdiğiniz davranış
+    validations:
+      required: true
