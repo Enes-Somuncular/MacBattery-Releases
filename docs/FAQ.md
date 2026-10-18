@@ -16,11 +16,11 @@ Apple Silicon işlemcili MacBook ve macOS 13 veya üzeri gerekir. Intel paketi y
 
 ### Şarjı gerçekten durduruyor mu?
 
-Bildirim hedefi yalnızca hatırlatmadır. Ayrı şarj sınırı düğmesi, desteklenen sistemlerde Apple’ın resmi Kestirmeler eylemini açar; sınırı Apple’ın penceresinde kullanıcı seçer ve macOS uygular. Uygulama bu sınırı okumaz, watt sınırı koymaz veya zorla deşarj uygulamaz. Apple, ölçüm doğruluğu için zaman zaman %100’e şarj edebilir.
+Bildirim hedefi yalnızca hatırlatmadır ve şarjı durdurmaz. **Koruma → Şarj sınırı ayarlarını aç** düğmesi macOS Pil ayarlarını açar. Şarj bilgi penceresi otomatik açılmazsa Pil bölümündeki Şarj satırının yanındaki **ⓘ** düğmesini seçin. Desteklenen Mac’lerde sınırı macOS yönetir; Wattelier bunu okumaz, değiştirmez veya zorla deşarj uygulamaz. Apple, kalibrasyon için zaman zaman %100'e şarj edebilir.
 
 ### Uygulamayı kapatırsam seçtiğim şarj sınırı kalkar mı?
 
-Hayır. Seçim macOS’a ait bir tercihtir. Apple’ın Pil ayarlarından veya aynı kestirmeden değiştirebilirsiniz. Wattelier bildirimleri ise uygulama açıkken çalışır.
+Hayır. Seçim macOS’a ait bir tercihtir. Apple’ın Pil ayarlarından değiştirebilirsiniz. Wattelier bildirimleri ise uygulama açıkken çalışır.
 
 ### Watt ve uygulama tüketimleri kesin ölçüm mü?
 
@@ -44,4 +44,4 @@ Mevcut dağıtım henüz Apple Developer ID / noter onayına sahip değildir. ma
 
 ### Sorun bildirmek için ne paylaşmalıyım?
 
-[Bir sorun kaydı açın](https://github.com/Enes-Somuncular/MacBattery-Releases/issues/new/choose). Uygulama sürümü, macOS sürümü, Mac modeli ve tekrarlama adımları yeterli bir başlangıçtır. Ekran görüntülerindeki kişisel bilgileri paylaşmadan önce gizleyin. Bu depodaki sorun kayıtları herkese açıktır.
+[Bir sorun kaydı açın](https://github.com/Enes-Somuncular/Wattelier-Releases/issues/new/choose). Uygulama sürümü, macOS sürümü, Mac modeli ve tekrarlama adımları yeterli bir başlangıçtır. Ekran görüntülerindeki kişisel bilgileri paylaşmadan önce gizleyin. Bu depodaki sorun kayıtları herkese açıktır.
