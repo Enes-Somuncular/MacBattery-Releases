@@ -4,29 +4,33 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>MacBattery</title>
         <item>
-            <title>MacBattery 1.5.0-beta.1</title>
-            <pubDate>Sun, 18 Oct 2026 19:06:20 +0300</pubDate>
+            <title>Wattelier 1.5.0-beta.2</title>
+            <pubDate>Sun, 18 Oct 2026 19:59:47 +0300</pubDate>
             <link>https://github.com/Enes-Somuncular/MacBattery-Releases/releases</link>
-            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.1</sparkle:fullReleaseNotesLink>
-            <sparkle:version>1.5.0b1</sparkle:version>
-            <sparkle:shortVersionString>1.5.0-beta.1</sparkle:shortVersionString>
+            <sparkle:fullReleaseNotesLink>https://github.com/Enes-Somuncular/MacBattery-Releases/releases/tag/v1.5.0-beta.2</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.5.0b2</sparkle:version>
+            <sparkle:shortVersionString>1.5.0-beta.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown">## MacBattery 1.5.0 Beta 1 — Uygulama enerji geçmişi
+            <description sparkle:format="markdown">## Wattelier 1.5.0 Beta 2 — Yeni Marka Kimliği
 
-- **Yenilenen Uygulamalar ekranı:** Anlık ve Geçmiş görünümleri.
-- Bugün ve son 7 gün için tahmini toplam uygulama enerjisi (Wh), en çok tüketen uygulamalar ve saatlik/günlük sütun grafiği.
-- Her uygulamaya dokunarak kendi enerji grafiğini inceleme; arama ve anlık CPU/RAM/Watt sıralaması.
-- **Gizlilik:** Uygulama adı/Bundle ID geçmişi varsayılan kapalıdır. Yerel kayıt, duraklatma, onaylı silme; en fazla 30 gün. Uygulama geçmişi sunucuya gönderilmez.
-- **Hesap sınırı:** MacBattery açıkken aynı oturumda peş peşe gözlenen uygulamaların CPU payı ve modellenmiş güç kullanılır. Tahmini Wh = Watt × gözlenen saat. Uyku/kapalı uygulama/eksik ölçüm süreleri uydurulmaz. Gerçek uygulama gücü doğrudan ölçülmez; GPU/ekran/arka plan yükleri tam atfedilemez.
-- Mevcut pil geçmişi ve 1.4.1 şarj durumu düzeltmeleri korunur.
+- **Wattelier'e geçiş:** Uygulama içinde yeni Wattelier ismi, marka renkleri, menü başlıkları ve Power, clarified. sloganı.
+- **Yeni simge:** Mac için W monogramlı, mint-yeşil ve açık limon tonlarında Finder simgesi.
+- **Mevcut kullanıcıları koruma:** Bundle ID, MacBattery.app paket yolu, yerel kayıtlar, şarj kestirmesi ve Sparkle güncelleme kanalı korunur.
+- **Daha tutarlı dağıtım:** Yeni indirilebilir dosyalar `Wattelier-1.5.0-beta.2.dmg` ve `Wattelier-1.5.0-beta.2.zip` adını taşır. İmzalı güncelleme akışı yeni beta sürümüne yönelir.
+- **Uygulama enerji geçmişi:** Beta 1'de eklenen uygulama bazlı tahmini enerji geçmişi, arama, karşılaştırmalar ve yerel veri kontrolleri korunur.
+- **Pil ve şarj:** Pil günlüğü, şarj durumu, güç grafikleri ve şarj koruması özellikleri korunur.
 
-Beta Mac üzerinde test edilmeden stabil 1.5.0 yayımlanmayacaktır. macOS 13+ ve Apple Silicon gerektirir.
+**Önemli:** Bazı macOS yerlerinde uygulama paketi dosyasının `MacBattery.app` olarak görünmesi mevcut kullanıcıların güvenli yükseltme akışı için bilinçli bir uyumluluk tercihidir. Görünen marka **Wattelier**'dir. Uygulama başına güç değerleri kesin donanım ölçümü değil, tahmindir.
+
+**Gereksinimler:** Apple Silicon Mac ve macOS 13 veya üzeri.
+
+Bu bir **beta** sürümdür. Kararlı 1.4.1 kanalı etkilenmez.
 </description>
-            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.1/MacBattery-1.5.0-beta.1.zip" length="2792014" type="application/octet-stream" sparkle:edSignature="MpJmBaVllJIZgPuYMh54N1Ezy2v3V9Yn+6RtDxGVDMzXxFjTstK35D/rm8AdSL2TUnf4sMeaKYFtH3Of7Is5CA=="></enclosure>
+            <enclosure url="https://github.com/Enes-Somuncular/MacBattery-Releases/releases/download/v1.5.0-beta.2/Wattelier-1.5.0-beta.2.zip" length="3147054" type="application/octet-stream" sparkle:edSignature="u9g5gTE2j3BWPDnxKUY+OXR4c9DHhyzwNgIwTKK9xOHgUVBlQ/7A1GscNBtPalUKAdLJBZcZ8i7FbYpYNYBUDw=="></enclosure>
         <sparkle:channel>beta</sparkle:channel></item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: aW8rW+iRw4D2EVf7fwuvvOFWVK9lDLDpqyDPY7T5t8RyCSCyHn3TxXL+ZvaGTxoa2d89uD6c7/d2MwDuDoBVAA==
-length: 2604
+edSignature: ok6PAqqm3p+sgEXvmqgfqoHdvhnP/2EkgVcb88FASuxbASNB7ILQfZmudlLJ/uILdP+Bqbfgdtc9bcOSiQfBCQ==
+length: 2889
 -->
